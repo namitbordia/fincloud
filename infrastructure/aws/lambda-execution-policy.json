@@ -1,0 +1,38 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadSilverDatasetAndManifest",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": [
+        "arn:aws:s3:::fincloud-market-data-unique123/silver/all_stocks.csv",
+        "arn:aws:s3:::fincloud-market-data-unique123/silver/silver_dataset_manifest.json"
+      ]
+    },
+    {
+      "Sid": "ReadRidgeModelMetadataAndArtifacts",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": [
+        "arn:aws:s3:::fincloud-market-data-unique123/models/volatility/model_metadata.json",
+        "arn:aws:s3:::fincloud-market-data-unique123/models/volatility/*_ridge.joblib"
+      ]
+    },
+    {
+      "Sid": "WriteAnalyticsResults",
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::fincloud-market-data-unique123/gold/api-results/*"
+    },
+    {
+      "Sid": "WriteFunctionLogs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:ap-south-1:*:log-group:/aws/lambda/fincloud-api:*"
+    }
+  ]
+}

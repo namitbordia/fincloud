@@ -1,0 +1,147 @@
+{
+  "input_rows": 6190,
+  "processable_rows": 6190,
+  "symbols_found": [
+    "HDFCBANK",
+    "ICICIBANK",
+    "INFY",
+    "RELIANCE",
+    "TCS"
+  ],
+  "date_range": {
+    "start": "2020-01-01",
+    "end": "2024-12-31"
+  },
+  "duplicate_symbol_date_rows": 0,
+  "invalid_date_rows": 0,
+  "invalid_symbol_rows": 0,
+  "missing_returns_by_symbol": {
+    "HDFCBANK": 1,
+    "ICICIBANK": 1,
+    "INFY": 1,
+    "RELIANCE": 1,
+    "TCS": 1
+  },
+  "non_finite_return_rows": 0,
+  "returns_below_minus_one_rows": 0,
+  "adjusted_close_return_provenance_verified": true,
+  "documented_input_exclusions": [
+    {
+      "source_row_number": 2,
+      "date": "2020-01-01",
+      "symbol": "HDFCBANK",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 1240,
+      "date": "2020-01-01",
+      "symbol": "ICICIBANK",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 2478,
+      "date": "2020-01-01",
+      "symbol": "INFY",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 3716,
+      "date": "2020-01-01",
+      "symbol": "RELIANCE",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 4954,
+      "date": "2020-01-01",
+      "symbol": "TCS",
+      "reason": "first_observation_without_prior_return"
+    }
+  ],
+  "expected_symbols": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK"
+  ],
+  "absent_symbols": [],
+  "unexpected_symbols": [],
+  "valid": true,
+  "checks": {
+    "all_configured_symbols_present": true,
+    "no_duplicate_input_symbol_dates": true,
+    "unique_forecast_symbol_date_model": true,
+    "forecast_origins_are_chronological": true,
+    "features_cut_off_at_forecast_origin": true,
+    "targets_use_only_next_horizon_rows": true,
+    "missing_values_are_not_filled": true,
+    "source_adjusted_close_provenance": true,
+    "raw_source_checksums_match_phase3_manifest": true
+  },
+  "forecast_rows": 7365,
+  "target_status_counts": {
+    "available": 6765,
+    "crosses_split_boundary": 300,
+    "insufficient_future_returns": 300
+  },
+  "target_status_origin_counts": {
+    "available": 2255,
+    "crosses_split_boundary": 100,
+    "insufficient_future_returns": 100
+  },
+  "forecast_status_counts": {
+    "ok": 7365
+  },
+  "failed_fit_count": 0,
+  "fit_failures": [],
+  "fit_warning_count": 0,
+  "date_splits": {
+    "training_origin_start": "2020-01-01",
+    "training_origin_end": "2022-12-31",
+    "validation_origin_start_exclusive": "2022-12-31",
+    "validation_origin_end": "2023-12-31",
+    "test_origin_start_exclusive": "2023-12-31",
+    "test_origin_end": "2024-12-31",
+    "boundary_crossing_targets_excluded": true
+  },
+  "excluded_input_records": [
+    {
+      "source_row_number": 2,
+      "date": "2020-01-01",
+      "symbol": "HDFCBANK",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 1240,
+      "date": "2020-01-01",
+      "symbol": "ICICIBANK",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 2478,
+      "date": "2020-01-01",
+      "symbol": "INFY",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 3716,
+      "date": "2020-01-01",
+      "symbol": "RELIANCE",
+      "reason": "first_observation_without_prior_return"
+    },
+    {
+      "source_row_number": 4954,
+      "date": "2020-01-01",
+      "symbol": "TCS",
+      "reason": "first_observation_without_prior_return"
+    }
+  ],
+  "silver_source_checksums_unchanged": true,
+  "raw_source_checksum_verification": {
+    "available": true,
+    "verified": true,
+    "verified_files": 12,
+    "expected_files": 12,
+    "mismatches": []
+  }
+}

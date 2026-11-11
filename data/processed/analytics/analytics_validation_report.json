@@ -1,0 +1,235 @@
+{
+  "input_file": "all_stocks.csv",
+  "input_row_count": 6190,
+  "selected_symbols": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK"
+  ],
+  "input_ordered_by_symbol_and_date": true,
+  "excluded_observations": {
+    "count": 5,
+    "by_reason": {
+      "missing_return": 5
+    },
+    "records": [
+      {
+        "row_number": 2,
+        "date": "2020-01-01",
+        "symbol": "HDFCBANK",
+        "reason": "missing_return"
+      },
+      {
+        "row_number": 1240,
+        "date": "2020-01-01",
+        "symbol": "ICICIBANK",
+        "reason": "missing_return"
+      },
+      {
+        "row_number": 2478,
+        "date": "2020-01-01",
+        "symbol": "INFY",
+        "reason": "missing_return"
+      },
+      {
+        "row_number": 3716,
+        "date": "2020-01-01",
+        "symbol": "RELIANCE",
+        "reason": "missing_return"
+      },
+      {
+        "row_number": 4954,
+        "date": "2020-01-01",
+        "symbol": "TCS",
+        "reason": "missing_return"
+      }
+    ]
+  },
+  "excluded_portfolio_dates": {
+    "count": 1,
+    "by_reason": {
+      "missing_or_invalid_asset_return": 1
+    },
+    "records": [
+      {
+        "date": "2020-01-01",
+        "reason": "missing_or_invalid_asset_return",
+        "missing_symbols": [
+          "RELIANCE",
+          "TCS",
+          "INFY",
+          "HDFCBANK",
+          "ICICIBANK"
+        ]
+      }
+    ]
+  },
+  "benchmark": {
+    "supplied": false,
+    "beta_available": false,
+    "unavailable_reason": "No benchmark supplied; beta is unavailable.",
+    "exclusions": []
+  },
+  "silver_provenance": {
+    "silver_validation_report_available": true,
+    "adjusted_close_return_provenance_verified": true,
+    "silver_manifest_row_count_matches": true
+  },
+  "source_numeric_quality": {
+    "missing_values_by_symbol_column": {
+      "HDFCBANK": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "adj_close": 0,
+        "volume": 0,
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "ICICIBANK": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "adj_close": 0,
+        "volume": 0,
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "INFY": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "adj_close": 0,
+        "volume": 0,
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "RELIANCE": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "adj_close": 0,
+        "volume": 0,
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "TCS": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "adj_close": 0,
+        "volume": 0,
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      }
+    },
+    "non_finite_values_by_symbol_column": {
+      "HDFCBANK": {},
+      "ICICIBANK": {},
+      "INFY": {},
+      "RELIANCE": {},
+      "TCS": {}
+    },
+    "non_positive_prices_by_symbol_column": {
+      "HDFCBANK": {},
+      "ICICIBANK": {},
+      "INFY": {},
+      "RELIANCE": {},
+      "TCS": {}
+    },
+    "negative_volume_rows_by_symbol": {
+      "HDFCBANK": 0,
+      "ICICIBANK": 0,
+      "INFY": 0,
+      "RELIANCE": 0,
+      "TCS": 0
+    },
+    "returns_below_minus_one_by_symbol": {
+      "HDFCBANK": 0,
+      "ICICIBANK": 0,
+      "INFY": 0,
+      "RELIANCE": 0,
+      "TCS": 0
+    },
+    "invalid_ohlc_rows_by_symbol": {
+      "HDFCBANK": 0,
+      "ICICIBANK": 0,
+      "INFY": 0,
+      "RELIANCE": 0,
+      "TCS": 0
+    },
+    "missing_values_are_not_filled": true
+  },
+  "correlation": {
+    "method": "Pearson correlation, pairwise complete observations",
+    "missing_values_filled": false,
+    "pairwise_observation_counts": {
+      "RELIANCE": {
+        "RELIANCE": 1237,
+        "TCS": 1237,
+        "INFY": 1237,
+        "HDFCBANK": 1237,
+        "ICICIBANK": 1237
+      },
+      "TCS": {
+        "RELIANCE": 1237,
+        "TCS": 1237,
+        "INFY": 1237,
+        "HDFCBANK": 1237,
+        "ICICIBANK": 1237
+      },
+      "INFY": {
+        "RELIANCE": 1237,
+        "TCS": 1237,
+        "INFY": 1237,
+        "HDFCBANK": 1237,
+        "ICICIBANK": 1237
+      },
+      "HDFCBANK": {
+        "RELIANCE": 1237,
+        "TCS": 1237,
+        "INFY": 1237,
+        "HDFCBANK": 1237,
+        "ICICIBANK": 1237
+      },
+      "ICICIBANK": {
+        "RELIANCE": 1237,
+        "TCS": 1237,
+        "INFY": 1237,
+        "HDFCBANK": 1237,
+        "ICICIBANK": 1237
+      }
+    }
+  },
+  "checks": {
+    "required_columns_present": true,
+    "no_non_finite_source_numeric_values": true,
+    "no_invalid_source_prices": true,
+    "no_invalid_source_ohlc": true,
+    "no_negative_source_volume": true,
+    "no_returns_below_minus_one": true,
+    "no_missing_source_market_values": true,
+    "adjusted_close_return_provenance_verified": true,
+    "silver_manifest_row_count_matches": true,
+    "all_selected_symbols_present": true,
+    "no_duplicate_dates_after_exclusions": true,
+    "daily_returns_are_finite_and_at_least_minus_one": true,
+    "no_missing_returns_in_analytics_input": true,
+    "portfolio_only_uses_complete_aligned_dates": true,
+    "correlation_does_not_fill_missing_returns": true,
+    "benchmark_beta_unavailable_without_benchmark": true
+  },
+  "valid": true
+}

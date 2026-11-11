@@ -1,0 +1,320 @@
+{
+  "generated_at": "2026-11-05T20:04:35.766972+00:00",
+  "source": "Existing Phase 2 local CSV and Parquet files; no downloads",
+  "date_range": {
+    "min": "2020-01-01",
+    "max": "2024-12-31",
+    "observed_session_calendar": "Union of valid dates observed in the configured source tickers; weekends and exchange holidays are not inferred."
+  },
+  "symbols": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK"
+  ],
+  "stock_reports": {
+    "RELIANCE": {
+      "row_count": 1238,
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "missing_source_values": {
+        "date": 0,
+        "symbol": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0,
+        "adj_close": 0
+      },
+      "derived_missing_values": {
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "flagged_rows": 0,
+      "quality_flag_counts": {},
+      "daily_return_count": 1237,
+      "log_return_count": 1237,
+      "rolling_volatility_count": 1218,
+      "rolling_volatility_warmup_rows": 20,
+      "adjusted_close_available": true,
+      "invalid_ohlc_rows": 0,
+      "date_sorted": true,
+      "source_row_count": 1238,
+      "source_quality_flag_counts": {},
+      "missing_observed_sessions": [],
+      "missing_observed_session_count": 0
+    },
+    "TCS": {
+      "row_count": 1238,
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "missing_source_values": {
+        "date": 0,
+        "symbol": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0,
+        "adj_close": 0
+      },
+      "derived_missing_values": {
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "flagged_rows": 0,
+      "quality_flag_counts": {},
+      "daily_return_count": 1237,
+      "log_return_count": 1237,
+      "rolling_volatility_count": 1218,
+      "rolling_volatility_warmup_rows": 20,
+      "adjusted_close_available": true,
+      "invalid_ohlc_rows": 0,
+      "date_sorted": true,
+      "source_row_count": 1238,
+      "source_quality_flag_counts": {},
+      "missing_observed_sessions": [],
+      "missing_observed_session_count": 0
+    },
+    "INFY": {
+      "row_count": 1238,
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "missing_source_values": {
+        "date": 0,
+        "symbol": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0,
+        "adj_close": 0
+      },
+      "derived_missing_values": {
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "flagged_rows": 0,
+      "quality_flag_counts": {},
+      "daily_return_count": 1237,
+      "log_return_count": 1237,
+      "rolling_volatility_count": 1218,
+      "rolling_volatility_warmup_rows": 20,
+      "adjusted_close_available": true,
+      "invalid_ohlc_rows": 0,
+      "date_sorted": true,
+      "source_row_count": 1238,
+      "source_quality_flag_counts": {},
+      "missing_observed_sessions": [],
+      "missing_observed_session_count": 0
+    },
+    "HDFCBANK": {
+      "row_count": 1238,
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "missing_source_values": {
+        "date": 0,
+        "symbol": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0,
+        "adj_close": 0
+      },
+      "derived_missing_values": {
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "flagged_rows": 0,
+      "quality_flag_counts": {},
+      "daily_return_count": 1237,
+      "log_return_count": 1237,
+      "rolling_volatility_count": 1218,
+      "rolling_volatility_warmup_rows": 20,
+      "adjusted_close_available": true,
+      "invalid_ohlc_rows": 0,
+      "date_sorted": true,
+      "source_row_count": 1238,
+      "source_quality_flag_counts": {},
+      "missing_observed_sessions": [],
+      "missing_observed_session_count": 0
+    },
+    "ICICIBANK": {
+      "row_count": 1238,
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "missing_source_values": {
+        "date": 0,
+        "symbol": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0,
+        "adj_close": 0
+      },
+      "derived_missing_values": {
+        "daily_return": 1,
+        "log_return": 1,
+        "rolling_volatility_20d": 20
+      },
+      "flagged_rows": 0,
+      "quality_flag_counts": {},
+      "daily_return_count": 1237,
+      "log_return_count": 1237,
+      "rolling_volatility_count": 1218,
+      "rolling_volatility_warmup_rows": 20,
+      "adjusted_close_available": true,
+      "invalid_ohlc_rows": 0,
+      "date_sorted": true,
+      "source_row_count": 1238,
+      "source_quality_flag_counts": {},
+      "missing_observed_sessions": [],
+      "missing_observed_session_count": 0
+    }
+  },
+  "row_count": 6190,
+  "row_counts_by_symbol": {
+    "RELIANCE": 1238,
+    "TCS": 1238,
+    "INFY": 1238,
+    "HDFCBANK": 1238,
+    "ICICIBANK": 1238
+  },
+  "missing_observed_sessions_by_symbol": {
+    "RELIANCE": [],
+    "TCS": [],
+    "INFY": [],
+    "HDFCBANK": [],
+    "ICICIBANK": []
+  },
+  "exclusions": {
+    "rule": "For duplicate normalized ticker/date keys, retain the first source row by source_row_number; list every later source row here.",
+    "count": 0,
+    "records": []
+  },
+  "row_quality_flags": [],
+  "flag_explanations": {
+    "invalid_date": "The source date could not be parsed.",
+    "missing_source_symbol": "The source row had no symbol; the individual source filename was used.",
+    "source_symbol_mismatch": "The source symbol did not match the individual stock filename; the filename symbol is authoritative.",
+    "missing_adjusted_close": "The source adjusted-close field is absent or missing; no other price field is substituted.",
+    "missing_value": "A source market-data value is missing.",
+    "non_numeric_value": "A source market-data value is not numeric.",
+    "invalid_price": "A price is non-finite or not strictly positive.",
+    "invalid_ohlc": "High is below an OHLC value or low is above an OHLC value.",
+    "negative_volume": "Source volume is negative.",
+    "invalid_volume": "Source volume is non-finite.",
+    "non_integer_volume": "Source volume is not an integer-valued quantity.",
+    "duplicate_ticker_date": "Multiple source rows share a ticker/date; the first source row is retained and later rows are listed in the exclusions report.",
+    "after_missing_session": "At least one session observed in another source ticker is missing for this ticker before this row."
+  },
+  "checks": {
+    "all_configured_symbols_represented": true,
+    "no_duplicate_ticker_date_keys": true,
+    "date_ordering": true,
+    "numeric_dtypes": {
+      "date": true,
+      "symbol": true,
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "adj_close": true,
+      "volume": true,
+      "daily_return": true,
+      "log_return": true,
+      "rolling_volatility_20d": true,
+      "rolling_volatility_warmup": true,
+      "source_row_number": true,
+      "quality_flags": true
+    },
+    "source_csv_parquet_parity": {
+      "RELIANCE": true,
+      "TCS": true,
+      "INFY": true,
+      "HDFCBANK": true,
+      "ICICIBANK": true,
+      "all_stocks_csv_vs_parquet": true,
+      "all_stocks_csv_vs_individual_csvs": true
+    },
+    "silver_csv_parquet_parity": {
+      "RELIANCE": true,
+      "TCS": true,
+      "INFY": true,
+      "HDFCBANK": true,
+      "ICICIBANK": true,
+      "all_stocks": true
+    },
+    "calculations": {
+      "daily_returns_mathematically_correct": true,
+      "log_returns_mathematically_correct": true,
+      "rolling_volatility_mathematically_correct": true,
+      "rolling_window": 20,
+      "rolling_standard_deviation_ddof": 1
+    },
+    "per_stock_rows_reconcile_to_combined": true,
+    "data_quality": {
+      "no_missing_source_values": true,
+      "no_invalid_price_values": true,
+      "no_invalid_ohlc_relationships": true,
+      "no_invalid_volume_values": true,
+      "no_missing_observed_sessions": true
+    }
+  },
+  "methodology": {
+    "adjusted_close_source_column": "adj_close",
+    "adjusted_close_present_in_sources": {
+      "RELIANCE": true,
+      "TCS": true,
+      "INFY": true,
+      "HDFCBANK": true,
+      "ICICIBANK": true
+    },
+    "return_formula": "adj_close[t] / adj_close[t-1] - 1",
+    "log_return_formula": "ln(adj_close[t] / adj_close[t-1])",
+    "return_requires_consecutive_observed_sessions": true,
+    "no_price_or_return_filling": true,
+    "rolling_volatility": "Trailing 20 consecutive row returns; sample standard deviation (ddof=1); no annualization.",
+    "rolling_warmup": "rolling_volatility_warmup is true until a full window of valid returns is available.",
+    "missing_session_detection": "Compare each symbol with the union of dates observed across the configured source symbols. Missing rows are reported, not synthesized; a session omitted by every source cannot be inferred.",
+    "corporate_action_caveat": "Adjusted close is used as supplied by the source. This dataset does not independently establish a complete corporate-action history or guarantee corporate-action correctness."
+  },
+  "output_files": {
+    "RELIANCE": {
+      "csv": "RELIANCE.csv",
+      "parquet": "RELIANCE.parquet"
+    },
+    "TCS": {
+      "csv": "TCS.csv",
+      "parquet": "TCS.parquet"
+    },
+    "INFY": {
+      "csv": "INFY.csv",
+      "parquet": "INFY.parquet"
+    },
+    "HDFCBANK": {
+      "csv": "HDFCBANK.csv",
+      "parquet": "HDFCBANK.parquet"
+    },
+    "ICICIBANK": {
+      "csv": "ICICIBANK.csv",
+      "parquet": "ICICIBANK.parquet"
+    },
+    "all_stocks": {
+      "csv": "all_stocks.csv",
+      "parquet": "all_stocks.parquet"
+    },
+    "silver_validation_report": {
+      "json": "silver_validation_report.json"
+    }
+  },
+  "valid": true
+}

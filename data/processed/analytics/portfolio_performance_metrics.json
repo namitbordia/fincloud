@@ -1,0 +1,87 @@
+{
+  "portfolio": {
+    "observation_count": 1237,
+    "annual_risk_free_rate": 0.0,
+    "daily_risk_free_rate": 0.0,
+    "total_return": 1.263888702898813,
+    "cagr": 0.17765918795738722,
+    "annualized_volatility": 0.20915933146003451,
+    "sharpe_ratio": 0.9012552180125933,
+    "sortino_ratio": 1.2739780985918772,
+    "maximum_drawdown": -0.3731340572738644,
+    "cagr_day_count": 1825,
+    "cagr_day_count_convention": "actual elapsed calendar days / 365.25",
+    "metric_availability": {
+      "total_return": true,
+      "cagr": true,
+      "annualized_volatility": true,
+      "sharpe_ratio": true,
+      "sortino_ratio": true,
+      "maximum_drawdown": true
+    },
+    "var_95": 0.017154078396469558,
+    "cvar_95": 0.030735265816106777,
+    "var_cvar_95_available": true,
+    "var_99": 0.03717429919808408,
+    "cvar_99": 0.058331594151684034,
+    "var_cvar_99_available": true,
+    "beta": null,
+    "beta_available": false,
+    "beta_observation_count": 0,
+    "weighting_method": "constant weights, daily rebalanced",
+    "weights": {
+      "RELIANCE": 0.2,
+      "TCS": 0.2,
+      "INFY": 0.2,
+      "HDFCBANK": 0.2,
+      "ICICIBANK": 0.2
+    },
+    "initial_portfolio_value": 1.0,
+    "benchmark_beta": {
+      "beta": null,
+      "observation_count": 0,
+      "available": false,
+      "unavailable_reason": "No benchmark was supplied."
+    }
+  },
+  "stock_betas": {
+    "RELIANCE": {
+      "beta": null,
+      "observation_count": 0,
+      "available": false,
+      "unavailable_reason": "No benchmark was supplied."
+    },
+    "TCS": {
+      "beta": null,
+      "observation_count": 0,
+      "available": false,
+      "unavailable_reason": "No benchmark was supplied."
+    },
+    "INFY": {
+      "beta": null,
+      "observation_count": 0,
+      "available": false,
+      "unavailable_reason": "No benchmark was supplied."
+    },
+    "HDFCBANK": {
+      "beta": null,
+      "observation_count": 0,
+      "available": false,
+      "unavailable_reason": "No benchmark was supplied."
+    },
+    "ICICIBANK": {
+      "beta": null,
+      "observation_count": 0,
+      "available": false,
+      "unavailable_reason": "No benchmark was supplied."
+    }
+  },
+  "metric_conventions": {
+    "trading_days_per_year": 252,
+    "annual_risk_free_rate": 0.0,
+    "daily_risk_free_rate": 0.0,
+    "cagr_day_count": "actual elapsed calendar days / 365.25",
+    "portfolio_method": "constant configured weights, rebalanced daily",
+    "var_cvar": "Historical simulation of losses=-returns; positive values represent losses; CVaR is mean loss at or beyond the interpolated VaR threshold."
+  }
+}

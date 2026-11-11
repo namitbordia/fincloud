@@ -1,0 +1,166 @@
+{
+  "processing_timestamp_utc": "2026-11-08T11:49:45.357214+00:00",
+  "source_directory": "C:\\Users\\Namit Bordia\\Downloads\\fincloud\\data\\processed\\silver",
+  "source_files": [
+    {
+      "filename": "all_stocks.csv",
+      "sha256": "128bf6a7f036b1eee21c69abfb4dcf7fafcd9fc34581d97c3833a9d06671b2e8",
+      "used_for_calculation": true
+    },
+    {
+      "filename": "all_stocks.parquet",
+      "sha256": "11bb549352d1a53ede264e69855e422463080e5e43890f0a028c1c4de006fef7",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "HDFCBANK.csv",
+      "sha256": "316bb53c4a9da042cd6ff34fc0cfbaf6c7162b30fd07f23ee3f1fc1c24042bd5",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "HDFCBANK.parquet",
+      "sha256": "6fffdb4b8e84b3c065a1555b3dc1c9537957892de8132e0d09dd6dc7dc0829cf",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "ICICIBANK.csv",
+      "sha256": "2eac920968e8517cc108e11e7ec768c07fb5a88fadbd9b77e6fd900a6f5c0d72",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "ICICIBANK.parquet",
+      "sha256": "3030a6f2fece51c86f5d54ca67f7936dab26dbcfb226081f6696b41edceb27c1",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "INFY.csv",
+      "sha256": "3b0ef2b9505ddf347955eceded8ba6479ea5ea8076868782de62edb1d55d6187",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "INFY.parquet",
+      "sha256": "dad651cf47f0eb243b22fb8d125d246b5403563d12dab7bdc1984a6afb3b18f4",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "RELIANCE.csv",
+      "sha256": "6e89ecfaa6e0b5b35ad2aa29641087dc679f5cda2f445d884a61359d38e86719",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "RELIANCE.parquet",
+      "sha256": "9e50100202def480e5085ddcb617d6da47177b075ce23df6e42a19df6e67b0eb",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "silver_dataset_manifest.json",
+      "sha256": "4b025ce8430dfcd0340f6a37dc302101f109bd71681f69646ac8a1102eb2acf5",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "silver_validation_report.json",
+      "sha256": "7005d5611f22e3c7e5bd268bf8a71d4567e74bc1bf8bdf1daf791015ea109175",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "TCS.csv",
+      "sha256": "ccdf7f510684cf19946578dabbc4be8b96f0213f023c05de8467dc59f82c6bb2",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "TCS.parquet",
+      "sha256": "5c70cc2d2c54d3a8d5233b614cd4866fe0598ba199afba9419ade1ef33dc5c40",
+      "used_for_calculation": false
+    }
+  ],
+  "source_checksums_unchanged_after_processing": true,
+  "raw_source_checksum_verification": {
+    "available": true,
+    "verified": true,
+    "verified_files": 12,
+    "expected_files": 12,
+    "mismatches": []
+  },
+  "stock_symbols": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK"
+  ],
+  "date_range": {
+    "start": "2020-01-01",
+    "end": "2024-12-31"
+  },
+  "row_counts": {
+    "silver_input_rows": 6190,
+    "processable_rows": 6190,
+    "forecast_comparison_rows": 7365,
+    "valid_actual_targets": 2255
+  },
+  "model_configuration": {
+    "target": "sqrt((252 / horizon) * sum(next_horizon_daily_return ** 2))",
+    "horizon_trading_sessions": 20,
+    "annualization_trading_days": 252,
+    "training_origin_end": "2022-12-31",
+    "validation_origin_end": "2023-12-31",
+    "ewma_lambda": 0.94,
+    "ewma_initialization": "Sample variance (ddof=1) of first horizon contiguous returns; then lambda * previous_variance + (1-lambda) * current_return^2.",
+    "historical_baseline": "Annualized sample standard deviation of the trailing horizon returns, used as a persistence forecast, not a forward estimate.",
+    "garch": {
+      "specification": "Constant mean, normal innovations, GARCH(1,1)",
+      "variance_equation": "h(t)=omega+alpha*epsilon(t-1)^2+beta*h(t-1)",
+      "minimum_history_observations": 252,
+      "fit_window": "Expanding contiguous history through each forecast origin",
+      "horizon": 20,
+      "return_scale_for_estimation": 100.0
+    },
+    "qlike_variance_floor": 1e-12,
+    "missing_and_invalid_returns": "Never filled; break the contiguous history and invalidate forward targets containing the return.",
+    "split_boundary_target_rule": "Validation targets crossing 2023-12-31 are excluded; test targets must have the complete horizon inside available test data.",
+    "random_seed": null
+  },
+  "runtime_versions": {
+    "python": "3.11.5",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "arch": "8.0.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "output_files": [
+    {
+      "filename": "statistical_forecasts.csv",
+      "sha256": "7a6c43ab73aa5961bcc1506eca7e657191bb7fdd2f51e0c8e2bfdeebc43d548e"
+    },
+    {
+      "filename": "statistical_model_metrics.csv",
+      "sha256": "c33aa0e478ff69b672cd0a2763561cd20dd8ec13c4ff201f2c11c2477b45d204"
+    },
+    {
+      "filename": "statistical_stock_metrics.csv",
+      "sha256": "c471bc70b8e458a3d51051fa84fef5e2c30357b43870d634b04d2374facc89ac"
+    },
+    {
+      "filename": "statistical_validation_report.json",
+      "sha256": "5fa62ea258ca4c10cf677a99adc9d04dc100dc9bc0bc705eeae865192624d2b9"
+    },
+    {
+      "filename": "plots/actual_vs_forecast_test.png",
+      "sha256": "5f906768df3586ba269bd870dc47249313035cffb627c432deeae945e94de51c"
+    },
+    {
+      "filename": "plots/model_comparison_test.png",
+      "sha256": "5e5fbf277a277b6ab26d74947947bf147e56ddc313755d90351a981f110ce556"
+    },
+    {
+      "filename": "plots/per_stock_performance_test.png",
+      "sha256": "c606654897fc73d5e8a06398131539411b0ddcd330fe547e307df0ab6737de26"
+    },
+    {
+      "filename": "plots/forecast_errors_over_time_test.png",
+      "sha256": "02ef5c03c9ea0b05fe152fb9eef571dde7e8ea9b1af325bbaa9f404619f4bbc4"
+    }
+  ]
+}

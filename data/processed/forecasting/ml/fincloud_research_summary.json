@@ -1,0 +1,914 @@
+{
+  "data_source_and_limitations": "Daily OHLCV and adjusted close sourced through yfinance from Yahoo Finance. Supplementary research data; not official NSE-certified data. Adjusted-close and corporate-action handling follows the source series and should be independently verified.",
+  "dataset": {
+    "combined_row_count": 6190,
+    "date_range": {
+      "max": "2024-12-31",
+      "min": "2020-01-01",
+      "observed_session_calendar": "Union of valid dates observed in the configured source tickers; weekends and exchange holidays are not inferred."
+    },
+    "manifest_checksum_note": "This manifest does not include its own checksum. Output checksums cover all generated data files and silver_validation_report.json.",
+    "output_filenames": {
+      "HDFCBANK": {
+        "csv": "HDFCBANK.csv",
+        "parquet": "HDFCBANK.parquet"
+      },
+      "ICICIBANK": {
+        "csv": "ICICIBANK.csv",
+        "parquet": "ICICIBANK.parquet"
+      },
+      "INFY": {
+        "csv": "INFY.csv",
+        "parquet": "INFY.parquet"
+      },
+      "RELIANCE": {
+        "csv": "RELIANCE.csv",
+        "parquet": "RELIANCE.parquet"
+      },
+      "TCS": {
+        "csv": "TCS.csv",
+        "parquet": "TCS.parquet"
+      },
+      "all_stocks": {
+        "csv": "all_stocks.csv",
+        "parquet": "all_stocks.parquet"
+      },
+      "silver_dataset_manifest": {
+        "json": "silver_dataset_manifest.json"
+      },
+      "silver_validation_report": {
+        "json": "silver_validation_report.json"
+      }
+    },
+    "output_sha256": {
+      "HDFCBANK.csv": "316bb53c4a9da042cd6ff34fc0cfbaf6c7162b30fd07f23ee3f1fc1c24042bd5",
+      "HDFCBANK.parquet": "6fffdb4b8e84b3c065a1555b3dc1c9537957892de8132e0d09dd6dc7dc0829cf",
+      "ICICIBANK.csv": "2eac920968e8517cc108e11e7ec768c07fb5a88fadbd9b77e6fd900a6f5c0d72",
+      "ICICIBANK.parquet": "3030a6f2fece51c86f5d54ca67f7936dab26dbcfb226081f6696b41edceb27c1",
+      "INFY.csv": "3b0ef2b9505ddf347955eceded8ba6479ea5ea8076868782de62edb1d55d6187",
+      "INFY.parquet": "dad651cf47f0eb243b22fb8d125d246b5403563d12dab7bdc1984a6afb3b18f4",
+      "RELIANCE.csv": "6e89ecfaa6e0b5b35ad2aa29641087dc679f5cda2f445d884a61359d38e86719",
+      "RELIANCE.parquet": "9e50100202def480e5085ddcb617d6da47177b075ce23df6e42a19df6e67b0eb",
+      "TCS.csv": "ccdf7f510684cf19946578dabbc4be8b96f0213f023c05de8467dc59f82c6bb2",
+      "TCS.parquet": "5c70cc2d2c54d3a8d5233b614cd4866fe0598ba199afba9419ade1ef33dc5c40",
+      "all_stocks.csv": "128bf6a7f036b1eee21c69abfb4dcf7fafcd9fc34581d97c3833a9d06671b2e8",
+      "all_stocks.parquet": "11bb549352d1a53ede264e69855e422463080e5e43890f0a028c1c4de006fef7",
+      "silver_validation_report.json": "7005d5611f22e3c7e5bd268bf8a71d4567e74bc1bf8bdf1daf791015ea109175"
+    },
+    "processing_configuration": {
+      "adjusted_close_column": "adj_close; never substitute close",
+      "duplicate_rule": "Keep earliest source_row_number per normalized symbol/date; record later rows in exclusions.",
+      "excluded_source_rows": 0,
+      "fill_missing_values": false,
+      "forward_fill_prices_or_returns": false,
+      "missing_session_calendar": "union of observed source dates",
+      "rolling_std_ddof": 1,
+      "rolling_window": 20,
+      "symbol_normalization": "uppercase; strip NSE: prefix and .NS suffix"
+    },
+    "processing_timestamp_utc": "2026-11-05T20:04:35.766972+00:00",
+    "row_counts": {
+      "HDFCBANK": 1238,
+      "ICICIBANK": 1238,
+      "INFY": 1238,
+      "RELIANCE": 1238,
+      "TCS": 1238
+    },
+    "runtime_versions": {
+      "packages": {
+        "numpy": "2.4.6",
+        "pandas": "3.1.1",
+        "pyarrow": "26.0.1",
+        "pytest": "9.2.0",
+        "yfinance": "1.8.0"
+      },
+      "python": "3.11.5"
+    },
+    "source_checksums_unchanged_after_processing": true,
+    "source_files": [
+      {
+        "filename": "RELIANCE.csv",
+        "role": "per_stock_csv_processing_input",
+        "sha256": "698a8004ce311f096b8ec5812921e1dbdf05b4f8c30161c1243df6502e6d1916"
+      },
+      {
+        "filename": "RELIANCE.parquet",
+        "role": "source_integrity_and_parity_check",
+        "sha256": "3a6b1955029b8fdef64ed0e5a60a2cf251b404c805f440d6fda29f3c00f05844"
+      },
+      {
+        "filename": "TCS.csv",
+        "role": "per_stock_csv_processing_input",
+        "sha256": "b8f1d88126e0cd1fdc7b72587def5dda21e324e3e03d1e77d56b242a6dc5d002"
+      },
+      {
+        "filename": "TCS.parquet",
+        "role": "source_integrity_and_parity_check",
+        "sha256": "08529c1b50d0bc556fd0fc226bd49f5228d2793d14c16a2ec96929bfab66438a"
+      },
+      {
+        "filename": "INFY.csv",
+        "role": "per_stock_csv_processing_input",
+        "sha256": "c5ad28e855f70ffefe77b0036ec71f5f8b4c368f5a0fa79929705947efae4009"
+      },
+      {
+        "filename": "INFY.parquet",
+        "role": "source_integrity_and_parity_check",
+        "sha256": "bc2607c81cb9cca2b7c6bc9b64e65cd03d1cc7ddc71797e29b038362840634ed"
+      },
+      {
+        "filename": "HDFCBANK.csv",
+        "role": "per_stock_csv_processing_input",
+        "sha256": "281b188db387a3b5e89768a991aa95f993065a7114d377290aae7eff60079f66"
+      },
+      {
+        "filename": "HDFCBANK.parquet",
+        "role": "source_integrity_and_parity_check",
+        "sha256": "08a79778c0ff430cefcc8d2d45dd77409f88b3392c7f733e8edc1f4a06d76c6a"
+      },
+      {
+        "filename": "ICICIBANK.csv",
+        "role": "per_stock_csv_processing_input",
+        "sha256": "7cef5d891cda8e4746d84ccd3e5e3be388bee92947afd8cfe79278a34fd42466"
+      },
+      {
+        "filename": "ICICIBANK.parquet",
+        "role": "source_integrity_and_parity_check",
+        "sha256": "6346de02f7b4fd01337b0907ab5a28268a43ba6608ecd14089c054b8ed7a90be"
+      },
+      {
+        "filename": "all_stocks.csv",
+        "role": "source_integrity_and_parity_check",
+        "sha256": "4965f6dc3d848722bf80a23ce79980887880747465528227bb020b4299ba5727"
+      },
+      {
+        "filename": "all_stocks.parquet",
+        "role": "source_integrity_and_parity_check",
+        "sha256": "5be60242943ced79490c143b17fae053aa9d45f96fc295bc654ee30749a8fb53"
+      }
+    ],
+    "stock_symbols": [
+      "RELIANCE",
+      "TCS",
+      "INFY",
+      "HDFCBANK",
+      "ICICIBANK"
+    ]
+  },
+  "dataset_validation": {
+    "checks": {
+      "all_configured_symbols_represented": true,
+      "calculations": {
+        "daily_returns_mathematically_correct": true,
+        "log_returns_mathematically_correct": true,
+        "rolling_standard_deviation_ddof": 1,
+        "rolling_volatility_mathematically_correct": true,
+        "rolling_window": 20
+      },
+      "data_quality": {
+        "no_invalid_ohlc_relationships": true,
+        "no_invalid_price_values": true,
+        "no_invalid_volume_values": true,
+        "no_missing_observed_sessions": true,
+        "no_missing_source_values": true
+      },
+      "date_ordering": true,
+      "no_duplicate_ticker_date_keys": true,
+      "numeric_dtypes": {
+        "adj_close": true,
+        "close": true,
+        "daily_return": true,
+        "date": true,
+        "high": true,
+        "log_return": true,
+        "low": true,
+        "open": true,
+        "quality_flags": true,
+        "rolling_volatility_20d": true,
+        "rolling_volatility_warmup": true,
+        "source_row_number": true,
+        "symbol": true,
+        "volume": true
+      },
+      "per_stock_rows_reconcile_to_combined": true,
+      "silver_csv_parquet_parity": {
+        "HDFCBANK": true,
+        "ICICIBANK": true,
+        "INFY": true,
+        "RELIANCE": true,
+        "TCS": true,
+        "all_stocks": true
+      },
+      "source_csv_parquet_parity": {
+        "HDFCBANK": true,
+        "ICICIBANK": true,
+        "INFY": true,
+        "RELIANCE": true,
+        "TCS": true,
+        "all_stocks_csv_vs_individual_csvs": true,
+        "all_stocks_csv_vs_parquet": true
+      }
+    },
+    "date_range": {
+      "max": "2024-12-31",
+      "min": "2020-01-01",
+      "observed_session_calendar": "Union of valid dates observed in the configured source tickers; weekends and exchange holidays are not inferred."
+    },
+    "exclusions": {
+      "count": 0,
+      "records": [],
+      "rule": "For duplicate normalized ticker/date keys, retain the first source row by source_row_number; list every later source row here."
+    },
+    "flag_explanations": {
+      "after_missing_session": "At least one session observed in another source ticker is missing for this ticker before this row.",
+      "duplicate_ticker_date": "Multiple source rows share a ticker/date; the first source row is retained and later rows are listed in the exclusions report.",
+      "invalid_date": "The source date could not be parsed.",
+      "invalid_ohlc": "High is below an OHLC value or low is above an OHLC value.",
+      "invalid_price": "A price is non-finite or not strictly positive.",
+      "invalid_volume": "Source volume is non-finite.",
+      "missing_adjusted_close": "The source adjusted-close field is absent or missing; no other price field is substituted.",
+      "missing_source_symbol": "The source row had no symbol; the individual source filename was used.",
+      "missing_value": "A source market-data value is missing.",
+      "negative_volume": "Source volume is negative.",
+      "non_integer_volume": "Source volume is not an integer-valued quantity.",
+      "non_numeric_value": "A source market-data value is not numeric.",
+      "source_symbol_mismatch": "The source symbol did not match the individual stock filename; the filename symbol is authoritative."
+    },
+    "generated_at": "2026-11-05T20:04:35.766972+00:00",
+    "methodology": {
+      "adjusted_close_present_in_sources": {
+        "HDFCBANK": true,
+        "ICICIBANK": true,
+        "INFY": true,
+        "RELIANCE": true,
+        "TCS": true
+      },
+      "adjusted_close_source_column": "adj_close",
+      "corporate_action_caveat": "Adjusted close is used as supplied by the source. This dataset does not independently establish a complete corporate-action history or guarantee corporate-action correctness.",
+      "log_return_formula": "ln(adj_close[t] / adj_close[t-1])",
+      "missing_session_detection": "Compare each symbol with the union of dates observed across the configured source symbols. Missing rows are reported, not synthesized; a session omitted by every source cannot be inferred.",
+      "no_price_or_return_filling": true,
+      "return_formula": "adj_close[t] / adj_close[t-1] - 1",
+      "return_requires_consecutive_observed_sessions": true,
+      "rolling_volatility": "Trailing 20 consecutive row returns; sample standard deviation (ddof=1); no annualization.",
+      "rolling_warmup": "rolling_volatility_warmup is true until a full window of valid returns is available."
+    },
+    "missing_observed_sessions_by_symbol": {
+      "HDFCBANK": [],
+      "ICICIBANK": [],
+      "INFY": [],
+      "RELIANCE": [],
+      "TCS": []
+    },
+    "output_files": {
+      "HDFCBANK": {
+        "csv": "HDFCBANK.csv",
+        "parquet": "HDFCBANK.parquet"
+      },
+      "ICICIBANK": {
+        "csv": "ICICIBANK.csv",
+        "parquet": "ICICIBANK.parquet"
+      },
+      "INFY": {
+        "csv": "INFY.csv",
+        "parquet": "INFY.parquet"
+      },
+      "RELIANCE": {
+        "csv": "RELIANCE.csv",
+        "parquet": "RELIANCE.parquet"
+      },
+      "TCS": {
+        "csv": "TCS.csv",
+        "parquet": "TCS.parquet"
+      },
+      "all_stocks": {
+        "csv": "all_stocks.csv",
+        "parquet": "all_stocks.parquet"
+      },
+      "silver_validation_report": {
+        "json": "silver_validation_report.json"
+      }
+    },
+    "row_count": 6190,
+    "row_counts_by_symbol": {
+      "HDFCBANK": 1238,
+      "ICICIBANK": 1238,
+      "INFY": 1238,
+      "RELIANCE": 1238,
+      "TCS": 1238
+    },
+    "row_quality_flags": [],
+    "source": "Existing Phase 2 local CSV and Parquet files; no downloads",
+    "stock_reports": {
+      "HDFCBANK": {
+        "adjusted_close_available": true,
+        "daily_return_count": 1237,
+        "date_max": "2024-12-31",
+        "date_min": "2020-01-01",
+        "date_sorted": true,
+        "derived_missing_values": {
+          "daily_return": 1,
+          "log_return": 1,
+          "rolling_volatility_20d": 20
+        },
+        "flagged_rows": 0,
+        "invalid_ohlc_rows": 0,
+        "log_return_count": 1237,
+        "missing_observed_session_count": 0,
+        "missing_observed_sessions": [],
+        "missing_source_values": {
+          "adj_close": 0,
+          "close": 0,
+          "date": 0,
+          "high": 0,
+          "low": 0,
+          "open": 0,
+          "symbol": 0,
+          "volume": 0
+        },
+        "quality_flag_counts": {},
+        "rolling_volatility_count": 1218,
+        "rolling_volatility_warmup_rows": 20,
+        "row_count": 1238,
+        "source_quality_flag_counts": {},
+        "source_row_count": 1238
+      },
+      "ICICIBANK": {
+        "adjusted_close_available": true,
+        "daily_return_count": 1237,
+        "date_max": "2024-12-31",
+        "date_min": "2020-01-01",
+        "date_sorted": true,
+        "derived_missing_values": {
+          "daily_return": 1,
+          "log_return": 1,
+          "rolling_volatility_20d": 20
+        },
+        "flagged_rows": 0,
+        "invalid_ohlc_rows": 0,
+        "log_return_count": 1237,
+        "missing_observed_session_count": 0,
+        "missing_observed_sessions": [],
+        "missing_source_values": {
+          "adj_close": 0,
+          "close": 0,
+          "date": 0,
+          "high": 0,
+          "low": 0,
+          "open": 0,
+          "symbol": 0,
+          "volume": 0
+        },
+        "quality_flag_counts": {},
+        "rolling_volatility_count": 1218,
+        "rolling_volatility_warmup_rows": 20,
+        "row_count": 1238,
+        "source_quality_flag_counts": {},
+        "source_row_count": 1238
+      },
+      "INFY": {
+        "adjusted_close_available": true,
+        "daily_return_count": 1237,
+        "date_max": "2024-12-31",
+        "date_min": "2020-01-01",
+        "date_sorted": true,
+        "derived_missing_values": {
+          "daily_return": 1,
+          "log_return": 1,
+          "rolling_volatility_20d": 20
+        },
+        "flagged_rows": 0,
+        "invalid_ohlc_rows": 0,
+        "log_return_count": 1237,
+        "missing_observed_session_count": 0,
+        "missing_observed_sessions": [],
+        "missing_source_values": {
+          "adj_close": 0,
+          "close": 0,
+          "date": 0,
+          "high": 0,
+          "low": 0,
+          "open": 0,
+          "symbol": 0,
+          "volume": 0
+        },
+        "quality_flag_counts": {},
+        "rolling_volatility_count": 1218,
+        "rolling_volatility_warmup_rows": 20,
+        "row_count": 1238,
+        "source_quality_flag_counts": {},
+        "source_row_count": 1238
+      },
+      "RELIANCE": {
+        "adjusted_close_available": true,
+        "daily_return_count": 1237,
+        "date_max": "2024-12-31",
+        "date_min": "2020-01-01",
+        "date_sorted": true,
+        "derived_missing_values": {
+          "daily_return": 1,
+          "log_return": 1,
+          "rolling_volatility_20d": 20
+        },
+        "flagged_rows": 0,
+        "invalid_ohlc_rows": 0,
+        "log_return_count": 1237,
+        "missing_observed_session_count": 0,
+        "missing_observed_sessions": [],
+        "missing_source_values": {
+          "adj_close": 0,
+          "close": 0,
+          "date": 0,
+          "high": 0,
+          "low": 0,
+          "open": 0,
+          "symbol": 0,
+          "volume": 0
+        },
+        "quality_flag_counts": {},
+        "rolling_volatility_count": 1218,
+        "rolling_volatility_warmup_rows": 20,
+        "row_count": 1238,
+        "source_quality_flag_counts": {},
+        "source_row_count": 1238
+      },
+      "TCS": {
+        "adjusted_close_available": true,
+        "daily_return_count": 1237,
+        "date_max": "2024-12-31",
+        "date_min": "2020-01-01",
+        "date_sorted": true,
+        "derived_missing_values": {
+          "daily_return": 1,
+          "log_return": 1,
+          "rolling_volatility_20d": 20
+        },
+        "flagged_rows": 0,
+        "invalid_ohlc_rows": 0,
+        "log_return_count": 1237,
+        "missing_observed_session_count": 0,
+        "missing_observed_sessions": [],
+        "missing_source_values": {
+          "adj_close": 0,
+          "close": 0,
+          "date": 0,
+          "high": 0,
+          "low": 0,
+          "open": 0,
+          "symbol": 0,
+          "volume": 0
+        },
+        "quality_flag_counts": {},
+        "rolling_volatility_count": 1218,
+        "rolling_volatility_warmup_rows": 20,
+        "row_count": 1238,
+        "source_quality_flag_counts": {},
+        "source_row_count": 1238
+      }
+    },
+    "symbols": [
+      "RELIANCE",
+      "TCS",
+      "INFY",
+      "HDFCBANK",
+      "ICICIBANK"
+    ],
+    "valid": true
+  },
+  "ml_validation": {
+    "adjusted_close_return_provenance_verified": true,
+    "checks": {
+      "forecast_keys_unique": true,
+      "model_features_use_only_information_at_origin": true,
+      "phase5_actual_targets_match": true,
+      "raw_or_silver_inputs_modified": false,
+      "target_is_strictly_future": true
+    },
+    "configuration": {
+      "model_parameters": {
+        "random_forest": {
+          "max_depth": 6,
+          "max_features": 0.8,
+          "min_samples_leaf": 5,
+          "n_estimators": 100
+        },
+        "ridge": {
+          "alpha": 1.0
+        },
+        "xgboost": {
+          "colsample_bytree": 0.9,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "n_estimators": 100,
+          "reg_lambda": 1.0,
+          "subsample": 0.9
+        }
+      },
+      "random_seed": 42,
+      "refit_frequency": "monthly",
+      "statistical_models_compared": [
+        "historical_rolling",
+        "ewma",
+        "garch_1_1"
+      ]
+    },
+    "duplicate_symbol_date_rows": 0,
+    "excluded_input_rows": 0,
+    "failed_model_fit_count": 0,
+    "failed_model_fits": [],
+    "feature_count": 22,
+    "feature_generation_is_past_only": true,
+    "feature_names": [
+      "daily_return",
+      "return_lag_1",
+      "return_lag_2",
+      "return_lag_5",
+      "return_lag_10",
+      "return_lag_20",
+      "return_lag_60",
+      "volatility_5d",
+      "volatility_10d",
+      "volatility_20d",
+      "volatility_60d",
+      "mean_return_5d",
+      "mean_return_10d",
+      "mean_return_20d",
+      "mean_return_60d",
+      "adjusted_close_sma_distance_5d",
+      "adjusted_close_sma_distance_20d",
+      "adjusted_close_sma_distance_60d",
+      "rsi_14",
+      "volume_change",
+      "log_dollar_turnover",
+      "mean_log_dollar_turnover_20d"
+    ],
+    "final_test_used_for_model_selection": false,
+    "fitted_preprocessing_uses_training_rows_only": true,
+    "forecast_coverage_is_metric_specific": true,
+    "forecast_rows": 7365,
+    "inference_time_seconds_by_model": {
+      "random_forest": 13.51949120068457,
+      "ridge": 1.0779203010024503,
+      "xgboost": 1.0045754000311717
+    },
+    "input_rows": 6190,
+    "invalid_key_rows": 0,
+    "model_fit_status_counts": {
+      "ok": 7365
+    },
+    "model_size_bytes_by_model": {
+      "ewma": 0,
+      "garch_1_1": 0,
+      "historical_rolling": 0,
+      "random_forest": 781459,
+      "ridge": 6969,
+      "xgboost": 104416
+    },
+    "phase5_baseline_forecast_rows": 7365,
+    "source_date_range": {
+      "end": "2024-12-31",
+      "start": "2020-01-01"
+    },
+    "split_dates": {
+      "test_target_end_must_be_observed": true,
+      "training_origin_end": "2022-12-31",
+      "validation_origin_end": "2023-12-31",
+      "validation_target_end_must_not_exceed": "2023-12-31"
+    },
+    "statistical_target_alignment_verified": true,
+    "symbols": [
+      "RELIANCE",
+      "TCS",
+      "INFY",
+      "HDFCBANK",
+      "ICICIBANK"
+    ],
+    "target_annualization_days": 252,
+    "target_definition": "sqrt((trading_days_per_year / horizon) * sum(next horizon daily_return squared))",
+    "target_horizon": 20,
+    "training_time_seconds_by_model": {
+      "random_forest": 40.04426019976381,
+      "ridge": 0.2067752997390926,
+      "xgboost": 7.963408199662808
+    },
+    "valid": true,
+    "validation_selected_ml_model_by_mae": "ridge"
+  },
+  "model_metrics": [
+    {
+      "eligible_origins": "1130",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.06619852829658386,
+      "model": "ewma",
+      "model_size_bytes": "0",
+      "qlike": 0.3328505380908199,
+      "rmse": 0.08440395904837443,
+      "split": "test",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1130"
+    },
+    {
+      "eligible_origins": "1125",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.04967151645648444,
+      "model": "ewma",
+      "model_size_bytes": "0",
+      "qlike": 0.2435688024228166,
+      "rmse": 0.0700839379309953,
+      "split": "validation",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1125"
+    },
+    {
+      "eligible_origins": "1130",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.07009160559328348,
+      "model": "garch_1_1",
+      "model_size_bytes": "0",
+      "qlike": 0.2309989918630697,
+      "rmse": 0.08605809210627405,
+      "split": "test",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1130"
+    },
+    {
+      "eligible_origins": "1125",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.08025136067415178,
+      "model": "garch_1_1",
+      "model_size_bytes": "0",
+      "qlike": 0.31108461415676236,
+      "rmse": 0.09140285401033493,
+      "split": "validation",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1125"
+    },
+    {
+      "eligible_origins": "1130",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.07236660869274228,
+      "model": "historical_rolling",
+      "model_size_bytes": "0",
+      "qlike": 0.43953277896468457,
+      "rmse": 0.09271120618078428,
+      "split": "test",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1130"
+    },
+    {
+      "eligible_origins": "1125",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.055300453069216424,
+      "model": "historical_rolling",
+      "model_size_bytes": "0",
+      "qlike": 0.3109714322931385,
+      "rmse": 0.07901891636447772,
+      "split": "validation",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1125"
+    },
+    {
+      "eligible_origins": "1130",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "13.51949120068457",
+      "mae": 0.06426731538922202,
+      "model": "random_forest",
+      "model_size_bytes": "781459",
+      "qlike": 0.299974097936885,
+      "rmse": 0.08323912526120061,
+      "split": "test",
+      "training_time_seconds": "40.04426019976381",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1130"
+    },
+    {
+      "eligible_origins": "1125",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "13.51949120068457",
+      "mae": 0.06144235412794003,
+      "model": "random_forest",
+      "model_size_bytes": "781459",
+      "qlike": 0.24177160592207353,
+      "rmse": 0.07694702527685462,
+      "split": "validation",
+      "training_time_seconds": "40.04426019976381",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1125"
+    },
+    {
+      "eligible_origins": "1130",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "1.0779203010024503",
+      "mae": 0.05739813663470032,
+      "model": "ridge",
+      "model_size_bytes": "6969",
+      "qlike": 0.27360828450495134,
+      "rmse": 0.0735018245820261,
+      "split": "test",
+      "training_time_seconds": "0.2067752997390926",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1130"
+    },
+    {
+      "eligible_origins": "1125",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "1.0779203010024503",
+      "mae": 0.05160870522497638,
+      "model": "ridge",
+      "model_size_bytes": "6969",
+      "qlike": 0.19154445093977843,
+      "rmse": 0.06517603428395839,
+      "split": "validation",
+      "training_time_seconds": "0.2067752997390926",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1125"
+    },
+    {
+      "eligible_origins": "1130",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "1.0045754000311717",
+      "mae": 0.0643594906345886,
+      "model": "xgboost",
+      "model_size_bytes": "104416",
+      "qlike": 0.30127749653772423,
+      "rmse": 0.08256653327506899,
+      "split": "test",
+      "training_time_seconds": "7.963408199662808",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1130"
+    },
+    {
+      "eligible_origins": "1125",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "1.0045754000311717",
+      "mae": 0.06365300631907796,
+      "model": "xgboost",
+      "model_size_bytes": "104416",
+      "qlike": 0.24431555952823716,
+      "rmse": 0.0801886980026876,
+      "split": "validation",
+      "training_time_seconds": "7.963408199662808",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "1125"
+    },
+    {
+      "eligible_origins": "2255",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.05795334500606863,
+      "model": "ewma",
+      "model_size_bytes": "0",
+      "qlike": 0.288308652225408,
+      "rmse": 0.07759088836270318,
+      "split": "all",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "2255"
+    },
+    {
+      "eligible_origins": "2255",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.07516021954715346,
+      "model": "garch_1_1",
+      "model_size_bytes": "0",
+      "qlike": 0.27095301628896956,
+      "rmse": 0.08876478430075105,
+      "split": "all",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "2255"
+    },
+    {
+      "eligible_origins": "2255",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "",
+      "mae": 0.06385245123089457,
+      "model": "historical_rolling",
+      "model_size_bytes": "0",
+      "qlike": 0.3753946348380817,
+      "rmse": 0.08615268595554175,
+      "split": "all",
+      "training_time_seconds": "0.0",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "2255"
+    },
+    {
+      "eligible_origins": "2255",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "13.51949120068457",
+      "mae": 0.06285796664468002,
+      "model": "random_forest",
+      "model_size_bytes": "781459",
+      "qlike": 0.2709373779738416,
+      "rmse": 0.08016180980014159,
+      "split": "all",
+      "training_time_seconds": "40.04426019976381",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "2255"
+    },
+    {
+      "eligible_origins": "2255",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "1.0779203010024503",
+      "mae": 0.054509839368208336,
+      "model": "ridge",
+      "model_size_bytes": "6969",
+      "qlike": 0.2326673475821932,
+      "rmse": 0.06947299387786803,
+      "split": "all",
+      "training_time_seconds": "0.2067752997390926",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "2255"
+    },
+    {
+      "eligible_origins": "2255",
+      "failed_fit_count": "0",
+      "forecast_coverage": 1.0,
+      "inference_time_seconds": "1.0045754000311717",
+      "mae": 0.06400703171886821,
+      "model": "xgboost",
+      "model_size_bytes": "104416",
+      "qlike": 0.27285967873919964,
+      "rmse": 0.08138893600769623,
+      "split": "all",
+      "training_time_seconds": "7.963408199662808",
+      "unavailable_forecast_count": "0",
+      "valid_forecasts": "2255"
+    }
+  ],
+  "optimization_validation": {
+    "checks": {
+      "estimation_windows_precede_rebalance": true,
+      "forecast_origins_precede_rebalance": true,
+      "ml_forecast_checksum_unchanged": true,
+      "phase4_analytics_unchanged": true,
+      "phase5_forecasts_unchanged": true,
+      "raw_checksums_match_phase3_manifest": true,
+      "raw_or_silver_data_unchanged": true,
+      "silver_checksums_unchanged": true,
+      "test_period_not_used_for_hyperparameter_selection": true,
+      "weights_sum_to_one": true
+    },
+    "configuration_count": 12,
+    "daily_return_rows": 28962,
+    "forecast_aware_model": "random_forest",
+    "forecast_aware_strategy_count": 192,
+    "optimization_weight_rows": 4800,
+    "overlapping_samples_or_costs_are_not_filled": true,
+    "phase4_analytics_checksums_unchanged": true,
+    "phase5_forecast_checksums_unchanged": true,
+    "raw_checksum_verification": {
+      "available": true,
+      "expected_files": 12,
+      "files_verified": 12,
+      "mismatches": [],
+      "verified": true
+    },
+    "rebalance_rows": 960,
+    "silver_date_range": {
+      "end": "2024-12-31",
+      "start": "2020-01-01"
+    },
+    "silver_rows": 6190,
+    "solver_diagnostics_file": "optimization_diagnostics.json",
+    "solver_failures_or_skips": 12,
+    "symbols": [
+      "HDFCBANK",
+      "ICICIBANK",
+      "INFY",
+      "RELIANCE",
+      "TCS"
+    ],
+    "valid": true
+  }
+}

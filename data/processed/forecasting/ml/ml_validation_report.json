@@ -1,0 +1,119 @@
+{
+  "input_rows": 6190,
+  "invalid_key_rows": 0,
+  "duplicate_symbol_date_rows": 0,
+  "valid": true,
+  "symbols": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK"
+  ],
+  "source_date_range": {
+    "start": "2020-01-01",
+    "end": "2024-12-31"
+  },
+  "feature_count": 22,
+  "feature_names": [
+    "daily_return",
+    "return_lag_1",
+    "return_lag_2",
+    "return_lag_5",
+    "return_lag_10",
+    "return_lag_20",
+    "return_lag_60",
+    "volatility_5d",
+    "volatility_10d",
+    "volatility_20d",
+    "volatility_60d",
+    "mean_return_5d",
+    "mean_return_10d",
+    "mean_return_20d",
+    "mean_return_60d",
+    "adjusted_close_sma_distance_5d",
+    "adjusted_close_sma_distance_20d",
+    "adjusted_close_sma_distance_60d",
+    "rsi_14",
+    "volume_change",
+    "log_dollar_turnover",
+    "mean_log_dollar_turnover_20d"
+  ],
+  "target_definition": "sqrt((trading_days_per_year / horizon) * sum(next horizon daily_return squared))",
+  "target_horizon": 20,
+  "target_annualization_days": 252,
+  "split_dates": {
+    "training_origin_end": "2022-12-31",
+    "validation_origin_end": "2023-12-31",
+    "validation_target_end_must_not_exceed": "2023-12-31",
+    "test_target_end_must_be_observed": true
+  },
+  "feature_generation_is_past_only": true,
+  "fitted_preprocessing_uses_training_rows_only": true,
+  "adjusted_close_return_provenance_verified": true,
+  "statistical_target_alignment_verified": true,
+  "forecast_rows": 7365,
+  "model_fit_status_counts": {
+    "ok": 7365
+  },
+  "failed_model_fit_count": 0,
+  "failed_model_fits": [],
+  "validation_selected_ml_model_by_mae": "ridge",
+  "final_test_used_for_model_selection": false,
+  "forecast_coverage_is_metric_specific": true,
+  "checks": {
+    "forecast_keys_unique": true,
+    "target_is_strictly_future": true,
+    "model_features_use_only_information_at_origin": true,
+    "phase5_actual_targets_match": true,
+    "raw_or_silver_inputs_modified": false
+  },
+  "configuration": {
+    "refit_frequency": "monthly",
+    "random_seed": 42,
+    "model_parameters": {
+      "random_forest": {
+        "n_estimators": 100,
+        "max_depth": 6,
+        "min_samples_leaf": 5,
+        "max_features": 0.8
+      },
+      "xgboost": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_lambda": 1.0
+      },
+      "ridge": {
+        "alpha": 1.0
+      }
+    },
+    "statistical_models_compared": [
+      "historical_rolling",
+      "ewma",
+      "garch_1_1"
+    ]
+  },
+  "training_time_seconds_by_model": {
+    "random_forest": 40.04426019976381,
+    "ridge": 0.2067752997390926,
+    "xgboost": 7.963408199662808
+  },
+  "inference_time_seconds_by_model": {
+    "random_forest": 13.51949120068457,
+    "ridge": 1.0779203010024503,
+    "xgboost": 1.0045754000311717
+  },
+  "model_size_bytes_by_model": {
+    "random_forest": 781459,
+    "xgboost": 104416,
+    "ridge": 6969,
+    "historical_rolling": 0,
+    "ewma": 0,
+    "garch_1_1": 0
+  },
+  "excluded_input_rows": 0,
+  "phase5_baseline_forecast_rows": 7365
+}

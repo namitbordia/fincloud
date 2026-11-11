@@ -1,0 +1,389 @@
+﻿{
+    "schema_version":  1,
+    "status":  "uploaded",
+    "region":  "ap-south-1",
+    "bucket":  "fincloud-market-data-unique123",
+    "data_source":  "Yahoo Finance through yfinance; supplementary research data, not official NSE-certified data",
+    "generated_at_utc":  "2026-11-09T05:12:40.1038581Z",
+    "object_count":  54,
+    "objects":  [
+                    {
+                        "key":  "bronze/all_stocks.csv",
+                        "size_bytes":  634267,
+                        "sha256":  "4965f6dc3d848722bf80a23ce79980887880747465528227bb020b4299ba5727",
+                        "checksum_sha256":  "SWX23D2EhyK/gKI855mAiHiAdHRlUoInuwILQpm6Vyc=",
+                        "source":  "data/raw/nse/all_stocks.csv"
+                    },
+                    {
+                        "key":  "bronze/all_stocks.parquet",
+                        "size_bytes":  270409,
+                        "sha256":  "5be60242943ced79490c143b17fae053aa9d45f96fc295bc654ee30749a8fb53",
+                        "checksum_sha256":  "W+YCQpQ87XlJDBQ7F/rgU6qdRflvwpW8ZU7jB0mo+1M=",
+                        "source":  "data/raw/nse/all_stocks.parquet"
+                    },
+                    {
+                        "key":  "bronze/HDFCBANK.csv",
+                        "size_bytes":  124610,
+                        "sha256":  "281b188db387a3b5e89768a991aa95f993065a7114d377290aae7eff60079f66",
+                        "checksum_sha256":  "KBsYjbOHo7Xol2ipkaqV+ZMGWnEU03cpCq5+/2AHn2Y=",
+                        "source":  "data/raw/nse/HDFCBANK.csv"
+                    },
+                    {
+                        "key":  "bronze/HDFCBANK.parquet",
+                        "size_bytes":  60040,
+                        "sha256":  "08a79778c0ff430cefcc8d2d45dd77409f88b3392c7f733e8edc1f4a06d76c6a",
+                        "checksum_sha256":  "CKeXeMD/QwzvzI0tRd13QJ+Iszksf3M+jtwfSgbXbGo=",
+                        "source":  "data/raw/nse/HDFCBANK.parquet"
+                    },
+                    {
+                        "key":  "bronze/ICICIBANK.csv",
+                        "size_bytes":  131360,
+                        "sha256":  "7cef5d891cda8e4746d84ccd3e5e3be388bee92947afd8cfe79278a34fd42466",
+                        "checksum_sha256":  "fO9diRzajkdG2EzNPl4744i+6SlHr9jP55J4o0/UJGY=",
+                        "source":  "data/raw/nse/ICICIBANK.csv"
+                    },
+                    {
+                        "key":  "bronze/ICICIBANK.parquet",
+                        "size_bytes":  62605,
+                        "sha256":  "6346de02f7b4fd01337b0907ab5a28268a43ba6608ecd14089c054b8ed7a90be",
+                        "checksum_sha256":  "Y0beAve0/QEzewkHq1ooJopDumYI7NFAicBUuO16kL4=",
+                        "source":  "data/raw/nse/ICICIBANK.parquet"
+                    },
+                    {
+                        "key":  "bronze/INFY.csv",
+                        "size_bytes":  122390,
+                        "sha256":  "c5ad28e855f70ffefe77b0036ec71f5f8b4c368f5a0fa79929705947efae4009",
+                        "checksum_sha256":  "xa0o6FX3D/7+d7ADbscfX4tMNo9aD6eZKXBZR++uQAk=",
+                        "source":  "data/raw/nse/INFY.csv"
+                    },
+                    {
+                        "key":  "bronze/INFY.parquet",
+                        "size_bytes":  61173,
+                        "sha256":  "bc2607c81cb9cca2b7c6bc9b64e65cd03d1cc7ddc71797e29b038362840634ed",
+                        "checksum_sha256":  "vCYHyBy5zKK3xrybZOZc0D0cx93HF5fimwODYoQGNO0=",
+                        "source":  "data/raw/nse/INFY.parquet"
+                    },
+                    {
+                        "key":  "bronze/RELIANCE.csv",
+                        "size_bytes":  142227,
+                        "sha256":  "698a8004ce311f096b8ec5812921e1dbdf05b4f8c30161c1243df6502e6d1916",
+                        "checksum_sha256":  "aYqABM4xHwlrjsWBKSHh298FtPjDAWHBJD32UC5tGRY=",
+                        "source":  "data/raw/nse/RELIANCE.csv"
+                    },
+                    {
+                        "key":  "bronze/RELIANCE.parquet",
+                        "size_bytes":  63243,
+                        "sha256":  "3a6b1955029b8fdef64ed0e5a60a2cf251b404c805f440d6fda29f3c00f05844",
+                        "checksum_sha256":  "OmsZVQKbj972TtDlpgos8lG0BMgF9EDW/aKfPADwWEQ=",
+                        "source":  "data/raw/nse/RELIANCE.parquet"
+                    },
+                    {
+                        "key":  "bronze/TCS.csv",
+                        "size_bytes":  113880,
+                        "sha256":  "b8f1d88126e0cd1fdc7b72587def5dda21e324e3e03d1e77d56b242a6dc5d002",
+                        "checksum_sha256":  "uPHYgSbgzR/ce3JYfe9d2iHjJOPgPR531WskKm3F0AI=",
+                        "source":  "data/raw/nse/TCS.csv"
+                    },
+                    {
+                        "key":  "bronze/TCS.parquet",
+                        "size_bytes":  60811,
+                        "sha256":  "08529c1b50d0bc556fd0fc226bd49f5228d2793d14c16a2ec96929bfab66438a",
+                        "checksum_sha256":  "CFKcG1DQvFVv0Pwia9SfUijSeT0UwWouyWkpv6tmQ4o=",
+                        "source":  "data/raw/nse/TCS.parquet"
+                    },
+                    {
+                        "key":  "silver/all_stocks.csv",
+                        "size_bytes":  1110974,
+                        "sha256":  "128bf6a7f036b1eee21c69abfb4dcf7fafcd9fc34581d97c3833a9d06671b2e8",
+                        "checksum_sha256":  "Eov2p/A2se7iHGmr+03Pf6/Nn8NFgdl8ODOp0GZxsug=",
+                        "source":  "data/processed/silver/all_stocks.csv"
+                    },
+                    {
+                        "key":  "silver/all_stocks.parquet",
+                        "size_bytes":  470610,
+                        "sha256":  "11bb549352d1a53ede264e69855e422463080e5e43890f0a028c1c4de006fef7",
+                        "checksum_sha256":  "EbtUk1LRpT7eJk5phV5CJGMIDl5DiQ8KAowcTeAG/vc=",
+                        "source":  "data/processed/silver/all_stocks.parquet"
+                    },
+                    {
+                        "key":  "silver/HDFCBANK.csv",
+                        "size_bytes":  221621,
+                        "sha256":  "316bb53c4a9da042cd6ff34fc0cfbaf6c7162b30fd07f23ee3f1fc1c24042bd5",
+                        "checksum_sha256":  "MWu1PEqdoELNb/NPwM+69scWKzD9B/I+4/H8HCQEK9U=",
+                        "source":  "data/processed/silver/HDFCBANK.csv"
+                    },
+                    {
+                        "key":  "silver/HDFCBANK.parquet",
+                        "size_bytes":  108447,
+                        "sha256":  "6fffdb4b8e84b3c065a1555b3dc1c9537957892de8132e0d09dd6dc7dc0829cf",
+                        "checksum_sha256":  "b//bS46Es8BloVVbPcHJU3lXiS3oEy4NCd1tx9wIKc8=",
+                        "source":  "data/processed/silver/HDFCBANK.parquet"
+                    },
+                    {
+                        "key":  "silver/ICICIBANK.csv",
+                        "size_bytes":  227929,
+                        "sha256":  "2eac920968e8517cc108e11e7ec768c07fb5a88fadbd9b77e6fd900a6f5c0d72",
+                        "checksum_sha256":  "LqySCWjoUXzBCOEefsdowH+1qI+tvZt35v2QCm9cDXI=",
+                        "source":  "data/processed/silver/ICICIBANK.csv"
+                    },
+                    {
+                        "key":  "silver/ICICIBANK.parquet",
+                        "size_bytes":  111144,
+                        "sha256":  "3030a6f2fece51c86f5d54ca67f7936dab26dbcfb226081f6696b41edceb27c1",
+                        "checksum_sha256":  "MDCm8v7OUchvXVTKZ/eTbasm28+yJggfZpa0HtzrJ8E=",
+                        "source":  "data/processed/silver/ICICIBANK.parquet"
+                    },
+                    {
+                        "key":  "silver/INFY.csv",
+                        "size_bytes":  216238,
+                        "sha256":  "3b0ef2b9505ddf347955eceded8ba6479ea5ea8076868782de62edb1d55d6187",
+                        "checksum_sha256":  "Ow7yuVBd3zR5Vezt7YumR56l6oB2hoeC3mLtsdVdYYc=",
+                        "source":  "data/processed/silver/INFY.csv"
+                    },
+                    {
+                        "key":  "silver/INFY.parquet",
+                        "size_bytes":  109893,
+                        "sha256":  "dad651cf47f0eb243b22fb8d125d246b5403563d12dab7bdc1984a6afb3b18f4",
+                        "checksum_sha256":  "2tZRz0fw6yQ7IvuNEl0ka1QDVj0S2re9wZhKavs7GPQ=",
+                        "source":  "data/processed/silver/INFY.parquet"
+                    },
+                    {
+                        "key":  "silver/RELIANCE.csv",
+                        "size_bytes":  238998,
+                        "sha256":  "6e89ecfaa6e0b5b35ad2aa29641087dc679f5cda2f445d884a61359d38e86719",
+                        "checksum_sha256":  "bons+qbgtbNa0qopZBCH3GefXNovRF2ISmE1nTjoZxk=",
+                        "source":  "data/processed/silver/RELIANCE.csv"
+                    },
+                    {
+                        "key":  "silver/RELIANCE.parquet",
+                        "size_bytes":  111790,
+                        "sha256":  "9e50100202def480e5085ddcb617d6da47177b075ce23df6e42a19df6e67b0eb",
+                        "checksum_sha256":  "nlAQAgLe9IDlCF3cthfW2kcXewdc4j325CoZ325nsOs=",
+                        "source":  "data/processed/silver/RELIANCE.parquet"
+                    },
+                    {
+                        "key":  "silver/silver_dataset_manifest.json",
+                        "size_bytes":  5755,
+                        "sha256":  "4b025ce8430dfcd0340f6a37dc302101f109bd71681f69646ac8a1102eb2acf5",
+                        "checksum_sha256":  "SwJc6EMN/NA0D2o33DAhAfEJvXFoH2lkasihEC6yrPU=",
+                        "source":  "data/processed/silver/silver_dataset_manifest.json"
+                    },
+                    {
+                        "key":  "silver/silver_validation_report.json",
+                        "size_bytes":  10308,
+                        "sha256":  "7005d5611f22e3c7e5bd268bf8a71d4567e74bc1bf8bdf1daf791015ea109175",
+                        "checksum_sha256":  "cAXVYR8i48flvSaL+KcdRWfnS8G/i98dr3kQFeoQkXU=",
+                        "source":  "data/processed/silver/silver_validation_report.json"
+                    },
+                    {
+                        "key":  "silver/TCS.csv",
+                        "size_bytes":  206808,
+                        "sha256":  "ccdf7f510684cf19946578dabbc4be8b96f0213f023c05de8467dc59f82c6bb2",
+                        "checksum_sha256":  "zN9/UQaEzxmUZXjau8S+i5bwIT8CPAXehGfcWfgsa7I=",
+                        "source":  "data/processed/silver/TCS.csv"
+                    },
+                    {
+                        "key":  "silver/TCS.parquet",
+                        "size_bytes":  109283,
+                        "sha256":  "5c70cc2d2c54d3a8d5233b614cd4866fe0598ba199afba9419ade1ef33dc5c40",
+                        "checksum_sha256":  "XHDMLSxU06jVIzthTNSGb+BZi6GZr7qUGa3h7zPcXEA=",
+                        "source":  "data/processed/silver/TCS.parquet"
+                    },
+                    {
+                        "key":  "gold/analytics/analytics_manifest.json",
+                        "size_bytes":  4857,
+                        "sha256":  "c5d21fcffff7572dc3586ebdeae90bbe28827d84cf0ea13a01b72e9773c2bb58",
+                        "checksum_sha256":  "xdIfz//3Vy3DWG696ukLviiCfYTPDqE6Abcul3PCu1g=",
+                        "source":  "data/processed/analytics/analytics_manifest.json"
+                    },
+                    {
+                        "key":  "gold/analytics/analytics_validation_report.json",
+                        "size_bytes":  5740,
+                        "sha256":  "578861db6c9181da72f04385adb725cede0a7166105ee7e6590585e72314b7d1",
+                        "checksum_sha256":  "V4hh22yRgdpy8EOFrbclzt4KcWYQXufmWQWF5yMUt9E=",
+                        "source":  "data/processed/analytics/analytics_validation_report.json"
+                    },
+                    {
+                        "key":  "gold/analytics/correlation_matrix.csv",
+                        "size_bytes":  495,
+                        "sha256":  "30c228d7965c4eaa504f94591ec6af33de6ae50e5c3cbaf89b3cd3600d26165d",
+                        "checksum_sha256":  "MMIo15ZcTqpQT5RZHsavM95q5Q5cPLr4mzzTYA0mFl0=",
+                        "source":  "data/processed/analytics/correlation_matrix.csv"
+                    },
+                    {
+                        "key":  "gold/analytics/portfolio_daily_returns.csv",
+                        "size_bytes":  202936,
+                        "sha256":  "0e8773a81d890fcf5870e68fdd7a02cf5184c3f81881bb9ca17073a9bf010a66",
+                        "checksum_sha256":  "DodzqB2JD89YcOaP3XoCz1GEw/gYgbucoXBzqb8BCmY=",
+                        "source":  "data/processed/analytics/portfolio_daily_returns.csv"
+                    },
+                    {
+                        "key":  "gold/analytics/portfolio_drawdown.csv",
+                        "size_bytes":  85563,
+                        "sha256":  "baee1c898aef22543f24d601ded989201311100768e3f44a33cf30cae7fde776",
+                        "checksum_sha256":  "uu4ciYrvIlQ/JNYB3tmJIBMREAdo4/RKM88wyuf953Y=",
+                        "source":  "data/processed/analytics/portfolio_drawdown.csv"
+                    },
+                    {
+                        "key":  "gold/analytics/portfolio_performance_metrics.json",
+                        "size_bytes":  2685,
+                        "sha256":  "b943eca14f7bcbbbcce61a0db10b45c5ad3965d02331b4d54e2957c2daa1aa68",
+                        "checksum_sha256":  "uUPsoU97y7vM5hoNsQtFxa05ZdAjMbTVTilXwtqhqmg=",
+                        "source":  "data/processed/analytics/portfolio_performance_metrics.json"
+                    },
+                    {
+                        "key":  "gold/analytics/risk_metrics.csv",
+                        "size_bytes":  841,
+                        "sha256":  "3b95cee5fc0cdfc8b1bfe6b3bc31b818e911ad42346e30952f8beebb0e4c8d97",
+                        "checksum_sha256":  "O5XO5fwM38ixv+azvDG4GOkRrUI0bjCVL4vuuw5MjZc=",
+                        "source":  "data/processed/analytics/risk_metrics.csv"
+                    },
+                    {
+                        "key":  "gold/analytics/stock_performance_metrics.csv",
+                        "size_bytes":  2048,
+                        "sha256":  "5fcc62c072ebb2d28a8a350fc1d3ef2e92206b15eb86fae0ec5d50ac31f70073",
+                        "checksum_sha256":  "X8xiwHLrstKKijUPwdPvLpIgaxXrhvrg7F1QrDH3AHM=",
+                        "source":  "data/processed/analytics/stock_performance_metrics.csv"
+                    },
+                    {
+                        "key":  "models/volatility/model_metadata.json",
+                        "size_bytes":  26563,
+                        "sha256":  "4ca4a0276a68e212126f19a3c90a4ceb68fc4274ee876354c933eab1bd77c3e7",
+                        "checksum_sha256":  "TKSgJ2po4hISbxmjyQpM62j8QnTuh2NUyTPqsb13w+c=",
+                        "source":  "models/volatility/model_metadata.json"
+                    },
+                    {
+                        "key":  "experiments/ml/feature_importance.csv",
+                        "size_bytes":  19516,
+                        "sha256":  "0b17d7ded77f825e895b68768e7119298425bf5a2515a64c4cebb99822d3517c",
+                        "checksum_sha256":  "CxfX3td/gl6JW2h2jnEZKYQlv1olFaZMTOu5mCLTUXw=",
+                        "source":  "data/processed/forecasting/ml/feature_importance.csv"
+                    },
+                    {
+                        "key":  "experiments/ml/ml_forecasts.csv",
+                        "size_bytes":  991872,
+                        "sha256":  "8873f3446d3cef608fd06b90e2586c670cf12db9ad6953550ffbe96a262f0d98",
+                        "checksum_sha256":  "iHPzRG0872CP0GuQ4lhsZwzxLbmtaVNVD/vpaiYvDZg=",
+                        "source":  "data/processed/forecasting/ml/ml_forecasts.csv"
+                    },
+                    {
+                        "key":  "experiments/ml/ml_manifest.json",
+                        "size_bytes":  5898,
+                        "sha256":  "ff3c7f524eb353a48d895b7f1b6741a1ac88931414dff395ea13ace2b78673ba",
+                        "checksum_sha256":  "/zx/Uk6zU6SNiVt/G2dBoayIkxQU3/OV6hOs4reGc7o=",
+                        "source":  "data/processed/forecasting/ml/ml_manifest.json"
+                    },
+                    {
+                        "key":  "experiments/ml/ml_model_metrics.csv",
+                        "size_bytes":  2353,
+                        "sha256":  "5c2f06132289eb72700ba51eadca9d365bf8a9cfcfbfd89b562293ca18b51bab",
+                        "checksum_sha256":  "XC8GEyKJ63JwC6UercqdNlv4qc/Pv9ibViKTyhi1G6s=",
+                        "source":  "data/processed/forecasting/ml/ml_model_metrics.csv"
+                    },
+                    {
+                        "key":  "experiments/ml/ml_stock_metrics.csv",
+                        "size_bytes":  11525,
+                        "sha256":  "fe3028ae6172791a99a1a43c281aa8b2f84f52e356bca35388582f5a59e2b1f9",
+                        "checksum_sha256":  "/jAormFyeRqZoaQ8KBqosvhPUuNWvKNTiFgvWlnisfk=",
+                        "source":  "data/processed/forecasting/ml/ml_stock_metrics.csv"
+                    },
+                    {
+                        "key":  "experiments/ml/ml_validation_report.json",
+                        "size_bytes":  3220,
+                        "sha256":  "a2316cb2297d2d4214333d10b823ba48b49e07eac3b3eb0c2a889f3f6211ac0f",
+                        "checksum_sha256":  "ojFssil9LUIUMz0QuCO6SLSeB+rDs+sMKoifP2IRrA8=",
+                        "source":  "data/processed/forecasting/ml/ml_validation_report.json"
+                    },
+                    {
+                        "key":  "experiments/ml/model_comparison.csv",
+                        "size_bytes":  1732352,
+                        "sha256":  "ba14af3980f112be08b277ca031a67f13add934d69cafa20a6d9f1912fa5afb2",
+                        "checksum_sha256":  "uhSvOYDxEr4IsnfKAxpn8Trdk01pyvogptnxkS+lr7I=",
+                        "source":  "data/processed/forecasting/ml/model_comparison.csv"
+                    },
+                    {
+                        "key":  "experiments/ml/fincloud_research_summary.json",
+                        "size_bytes":  30901,
+                        "sha256":  "3a684c67c341187cf5f2b7acdb4d79d931076f84695e7bf5a557acf4732cc226",
+                        "checksum_sha256":  "OmhMZ8NBGHz18res20152TEHb4RpXnv1pVes9HMswiY=",
+                        "source":  "data/processed/forecasting/ml/fincloud_research_summary.json"
+                    },
+                    {
+                        "key":  "experiments/statistical/statistical_forecasts.csv",
+                        "size_bytes":  833942,
+                        "sha256":  "7a6c43ab73aa5961bcc1506eca7e657191bb7fdd2f51e0c8e2bfdeebc43d548e",
+                        "checksum_sha256":  "emxDq3OqWWG8wVBuyn5lcZG7f90vUeDI4r/e68Q9VI4=",
+                        "source":  "data/processed/forecasting/statistical/statistical_forecasts.csv"
+                    },
+                    {
+                        "key":  "experiments/statistical/statistical_manifest.json",
+                        "size_bytes":  6001,
+                        "sha256":  "dd8ba3888e5038649d2b9c5f31778b23b2385d7c1e6b77a99324e61b93273ecd",
+                        "checksum_sha256":  "3YujiI5QOGSdK5xfMXeLI7I4XXwea3epkyTmG5MnPs0=",
+                        "source":  "data/processed/forecasting/statistical/statistical_manifest.json"
+                    },
+                    {
+                        "key":  "experiments/statistical/statistical_model_metrics.csv",
+                        "size_bytes":  989,
+                        "sha256":  "c33aa0e478ff69b672cd0a2763561cd20dd8ec13c4ff201f2c11c2477b45d204",
+                        "checksum_sha256":  "wzqg5Hj/abZyzQonY1Yc0g3Y7BPE/yAfLBHCR3tF0gQ=",
+                        "source":  "data/processed/forecasting/statistical/statistical_model_metrics.csv"
+                    },
+                    {
+                        "key":  "experiments/statistical/statistical_stock_metrics.csv",
+                        "size_bytes":  4699,
+                        "sha256":  "c471bc70b8e458a3d51051fa84fef5e2c30357b43870d634b04d2374facc89ac",
+                        "checksum_sha256":  "xHG8cLjkWKPVEFH6hP714sMDV7Q4cNY0sE0jdPrMiaw=",
+                        "source":  "data/processed/forecasting/statistical/statistical_stock_metrics.csv"
+                    },
+                    {
+                        "key":  "experiments/statistical/statistical_validation_report.json",
+                        "size_bytes":  3921,
+                        "sha256":  "5fa62ea258ca4c10cf677a99adc9d04dc100dc9bc0bc705eeae865192624d2b9",
+                        "checksum_sha256":  "X6YuoljKTBDPZ3qZrcnQTcEA3JvAvHBe6uhlGSYk0rk=",
+                        "source":  "data/processed/forecasting/statistical/statistical_validation_report.json"
+                    },
+                    {
+                        "key":  "experiments/optimization/backtest_validation_report.json",
+                        "size_bytes":  1331,
+                        "sha256":  "7772a9708911d377837620bb683b8784c47823b8410c9e69b10b6a8f10764213",
+                        "checksum_sha256":  "d3KpcIkR03eDdiC7aDuHhMR4I7hBDJ5psQtqjxB2QhM=",
+                        "source":  "data/processed/optimization/backtest_validation_report.json"
+                    },
+                    {
+                        "key":  "experiments/optimization/optimization_diagnostics.json",
+                        "size_bytes":  7365,
+                        "sha256":  "fb42d2bd0ce92609438f85d889ae414a293406a4107a9691b8a8f4f1d55da478",
+                        "checksum_sha256":  "+0LSvQzpJglDj4XYia5BSik0BqQQepaRuKj08dVdpHg=",
+                        "source":  "data/processed/optimization/optimization_diagnostics.json"
+                    },
+                    {
+                        "key":  "experiments/optimization/optimization_manifest.json",
+                        "size_bytes":  5560,
+                        "sha256":  "da5d7c7da2644a7517b1b7ea6f3c71980c13d90dbc08bf7b4008e56ab0707368",
+                        "checksum_sha256":  "2l18faJkSnUXsbfqbzxxmAwT2Q28CL97QAjlarBwc2g=",
+                        "source":  "data/processed/optimization/optimization_manifest.json"
+                    },
+                    {
+                        "key":  "experiments/optimization/optimized_weights.csv",
+                        "size_bytes":  975824,
+                        "sha256":  "14dfc1c17ff64b0505197b0402a562272df2f7f7ac7e9112987a25917cd410a1",
+                        "checksum_sha256":  "FN/BwX/2SwUFGXsEAqViJy3y9/esfpESmHolkXzUEKE=",
+                        "source":  "data/processed/optimization/optimized_weights.csv"
+                    },
+                    {
+                        "key":  "experiments/optimization/strategy_performance.csv",
+                        "size_bytes":  122085,
+                        "sha256":  "7db2c189de093ea942c84bd24dd7c4a5a45c524ba792e42b9641ce6c18852880",
+                        "checksum_sha256":  "fbLBid4JPqlCyEvSTdfEpaRcUkunkuQrlkHObBiFKIA=",
+                        "source":  "data/processed/optimization/strategy_performance.csv"
+                    },
+                    {
+                        "key":  "experiments/optimization/strategy_risk_metrics.csv",
+                        "size_bytes":  25083,
+                        "sha256":  "cdbb34503c0bcb7a9032dcfc3f2dcd2d16eee3b6c7f7ed93e55d0d423332798a",
+                        "checksum_sha256":  "zbs0UDwLy3qQMtz8Py3NLRbu47bH9+2T5V0NQjMyeYo=",
+                        "source":  "data/processed/optimization/strategy_risk_metrics.csv"
+                    }
+                ]
+}

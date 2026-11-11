@@ -1,0 +1,339 @@
+{
+  "generated_at": "2026-11-05T19:23:28.306201+00:00",
+  "source": "Yahoo Finance via yfinance",
+  "date_range": {
+    "start_inclusive": "2020-01-01",
+    "end_exclusive": "2025-01-01"
+  },
+  "datasets": {
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "row_count": 1238,
+      "valid": true,
+      "checks": {
+        "required_columns": {
+          "passed": true,
+          "missing": []
+        },
+        "missing_values": {
+          "passed": true,
+          "counts_by_column": {
+            "date": 0,
+            "symbol": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "close": 0,
+            "volume": 0,
+            "adj_close": 0
+          },
+          "count": 0
+        },
+        "numeric_values": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "positive_prices": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "ohlc_relationships": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "non_negative_volume": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "duplicate_dates": {
+          "passed": true,
+          "duplicate_rows": 0
+        },
+        "date_sorting": {
+          "passed": true,
+          "unsorted_symbols": []
+        }
+      },
+      "issues": []
+    },
+    "TCS": {
+      "symbol": "TCS",
+      "row_count": 1238,
+      "valid": true,
+      "checks": {
+        "required_columns": {
+          "passed": true,
+          "missing": []
+        },
+        "missing_values": {
+          "passed": true,
+          "counts_by_column": {
+            "date": 0,
+            "symbol": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "close": 0,
+            "volume": 0,
+            "adj_close": 0
+          },
+          "count": 0
+        },
+        "numeric_values": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "positive_prices": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "ohlc_relationships": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "non_negative_volume": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "duplicate_dates": {
+          "passed": true,
+          "duplicate_rows": 0
+        },
+        "date_sorting": {
+          "passed": true,
+          "unsorted_symbols": []
+        }
+      },
+      "issues": []
+    },
+    "INFY": {
+      "symbol": "INFY",
+      "row_count": 1238,
+      "valid": true,
+      "checks": {
+        "required_columns": {
+          "passed": true,
+          "missing": []
+        },
+        "missing_values": {
+          "passed": true,
+          "counts_by_column": {
+            "date": 0,
+            "symbol": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "close": 0,
+            "volume": 0,
+            "adj_close": 0
+          },
+          "count": 0
+        },
+        "numeric_values": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "positive_prices": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "ohlc_relationships": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "non_negative_volume": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "duplicate_dates": {
+          "passed": true,
+          "duplicate_rows": 0
+        },
+        "date_sorting": {
+          "passed": true,
+          "unsorted_symbols": []
+        }
+      },
+      "issues": []
+    },
+    "HDFCBANK": {
+      "symbol": "HDFCBANK",
+      "row_count": 1238,
+      "valid": true,
+      "checks": {
+        "required_columns": {
+          "passed": true,
+          "missing": []
+        },
+        "missing_values": {
+          "passed": true,
+          "counts_by_column": {
+            "date": 0,
+            "symbol": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "close": 0,
+            "volume": 0,
+            "adj_close": 0
+          },
+          "count": 0
+        },
+        "numeric_values": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "positive_prices": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "ohlc_relationships": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "non_negative_volume": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "duplicate_dates": {
+          "passed": true,
+          "duplicate_rows": 0
+        },
+        "date_sorting": {
+          "passed": true,
+          "unsorted_symbols": []
+        }
+      },
+      "issues": []
+    },
+    "ICICIBANK": {
+      "symbol": "ICICIBANK",
+      "row_count": 1238,
+      "valid": true,
+      "checks": {
+        "required_columns": {
+          "passed": true,
+          "missing": []
+        },
+        "missing_values": {
+          "passed": true,
+          "counts_by_column": {
+            "date": 0,
+            "symbol": 0,
+            "open": 0,
+            "high": 0,
+            "low": 0,
+            "close": 0,
+            "volume": 0,
+            "adj_close": 0
+          },
+          "count": 0
+        },
+        "numeric_values": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "positive_prices": {
+          "passed": true,
+          "invalid_counts_by_column": {}
+        },
+        "ohlc_relationships": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "non_negative_volume": {
+          "passed": true,
+          "invalid_rows": 0
+        },
+        "duplicate_dates": {
+          "passed": true,
+          "duplicate_rows": 0
+        },
+        "date_sorting": {
+          "passed": true,
+          "unsorted_symbols": []
+        }
+      },
+      "issues": []
+    }
+  },
+  "combined": {
+    "symbol": null,
+    "row_count": 6190,
+    "valid": true,
+    "checks": {
+      "required_columns": {
+        "passed": true,
+        "missing": []
+      },
+      "missing_values": {
+        "passed": true,
+        "counts_by_column": {
+          "date": 0,
+          "symbol": 0,
+          "open": 0,
+          "high": 0,
+          "low": 0,
+          "close": 0,
+          "volume": 0,
+          "adj_close": 0
+        },
+        "count": 0
+      },
+      "numeric_values": {
+        "passed": true,
+        "invalid_counts_by_column": {}
+      },
+      "positive_prices": {
+        "passed": true,
+        "invalid_counts_by_column": {}
+      },
+      "ohlc_relationships": {
+        "passed": true,
+        "invalid_rows": 0
+      },
+      "non_negative_volume": {
+        "passed": true,
+        "invalid_rows": 0
+      },
+      "duplicate_dates": {
+        "passed": true,
+        "duplicate_rows": 0
+      },
+      "date_sorting": {
+        "passed": true,
+        "unsorted_symbols": []
+      }
+    },
+    "issues": []
+  },
+  "download_errors": {},
+  "output_files": {
+    "RELIANCE": {
+      "csv": "data\\raw\\nse\\RELIANCE.csv",
+      "parquet": "data\\raw\\nse\\RELIANCE.parquet"
+    },
+    "TCS": {
+      "csv": "data\\raw\\nse\\TCS.csv",
+      "parquet": "data\\raw\\nse\\TCS.parquet"
+    },
+    "INFY": {
+      "csv": "data\\raw\\nse\\INFY.csv",
+      "parquet": "data\\raw\\nse\\INFY.parquet"
+    },
+    "HDFCBANK": {
+      "csv": "data\\raw\\nse\\HDFCBANK.csv",
+      "parquet": "data\\raw\\nse\\HDFCBANK.parquet"
+    },
+    "ICICIBANK": {
+      "csv": "data\\raw\\nse\\ICICIBANK.csv",
+      "parquet": "data\\raw\\nse\\ICICIBANK.parquet"
+    },
+    "all_stocks": {
+      "csv": "data\\raw\\nse\\all_stocks.csv",
+      "parquet": "data\\raw\\nse\\all_stocks.parquet"
+    }
+  },
+  "parquet_available": true,
+  "valid": true
+}

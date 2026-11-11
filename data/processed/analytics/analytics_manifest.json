@@ -1,0 +1,140 @@
+{
+  "execution_timestamp_utc": "2026-11-08T06:55:17.515124+00:00",
+  "input_files": [
+    {
+      "filename": "all_stocks.csv",
+      "sha256": "128bf6a7f036b1eee21c69abfb4dcf7fafcd9fc34581d97c3833a9d06671b2e8",
+      "used_for_calculation": true
+    },
+    {
+      "filename": "all_stocks.parquet",
+      "sha256": "11bb549352d1a53ede264e69855e422463080e5e43890f0a028c1c4de006fef7",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "HDFCBANK.csv",
+      "sha256": "316bb53c4a9da042cd6ff34fc0cfbaf6c7162b30fd07f23ee3f1fc1c24042bd5",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "HDFCBANK.parquet",
+      "sha256": "6fffdb4b8e84b3c065a1555b3dc1c9537957892de8132e0d09dd6dc7dc0829cf",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "ICICIBANK.csv",
+      "sha256": "2eac920968e8517cc108e11e7ec768c07fb5a88fadbd9b77e6fd900a6f5c0d72",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "ICICIBANK.parquet",
+      "sha256": "3030a6f2fece51c86f5d54ca67f7936dab26dbcfb226081f6696b41edceb27c1",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "INFY.csv",
+      "sha256": "3b0ef2b9505ddf347955eceded8ba6479ea5ea8076868782de62edb1d55d6187",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "INFY.parquet",
+      "sha256": "dad651cf47f0eb243b22fb8d125d246b5403563d12dab7bdc1984a6afb3b18f4",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "RELIANCE.csv",
+      "sha256": "6e89ecfaa6e0b5b35ad2aa29641087dc679f5cda2f445d884a61359d38e86719",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "RELIANCE.parquet",
+      "sha256": "9e50100202def480e5085ddcb617d6da47177b075ce23df6e42a19df6e67b0eb",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "silver_dataset_manifest.json",
+      "sha256": "4b025ce8430dfcd0340f6a37dc302101f109bd71681f69646ac8a1102eb2acf5",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "silver_validation_report.json",
+      "sha256": "7005d5611f22e3c7e5bd268bf8a71d4567e74bc1bf8bdf1daf791015ea109175",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "TCS.csv",
+      "sha256": "ccdf7f510684cf19946578dabbc4be8b96f0213f023c05de8467dc59f82c6bb2",
+      "used_for_calculation": false
+    },
+    {
+      "filename": "TCS.parquet",
+      "sha256": "5c70cc2d2c54d3a8d5233b614cd4866fe0598ba199afba9419ade1ef33dc5c40",
+      "used_for_calculation": false
+    }
+  ],
+  "input_checksums_unchanged_after_processing": true,
+  "configuration": {
+    "selected_symbols": [
+      "RELIANCE",
+      "TCS",
+      "INFY",
+      "HDFCBANK",
+      "ICICIBANK"
+    ],
+    "portfolio_weights": {
+      "RELIANCE": 0.2,
+      "TCS": 0.2,
+      "INFY": 0.2,
+      "HDFCBANK": 0.2,
+      "ICICIBANK": 0.2
+    },
+    "weighting_method": "constant weights, daily rebalanced",
+    "long_only": true,
+    "weight_sum_tolerance": 1e-08,
+    "annual_risk_free_rate": 0.0,
+    "daily_risk_free_rate": 0.0,
+    "risk_free_rate_default_note": "0% is a computational fallback, not an estimate of the Indian risk-free rate.",
+    "trading_days_per_year": 252,
+    "initial_portfolio_value": 1.0,
+    "benchmark_csv": null,
+    "benchmark_source_rows_excluded": 0
+  },
+  "date_range": {
+    "start": "2020-01-02",
+    "end": "2024-12-31"
+  },
+  "observation_counts": {
+    "input_rows": 6190,
+    "valid_stock_return_rows": 6185,
+    "excluded_stock_observations": 5,
+    "portfolio_aligned_observations": 1237,
+    "excluded_portfolio_dates": 1
+  },
+  "output_filenames": [
+    "stock_performance_metrics.csv",
+    "portfolio_daily_returns.csv",
+    "portfolio_performance_metrics.json",
+    "correlation_matrix.csv",
+    "portfolio_drawdown.csv",
+    "risk_metrics.csv",
+    "analytics_validation_report.json",
+    "analytics_manifest.json"
+  ],
+  "output_sha256": {
+    "stock_performance_metrics.csv": "5fcc62c072ebb2d28a8a350fc1d3ef2e92206b15eb86fae0ec5d50ac31f70073",
+    "portfolio_daily_returns.csv": "0e8773a81d890fcf5870e68fdd7a02cf5184c3f81881bb9ca17073a9bf010a66",
+    "portfolio_performance_metrics.json": "b943eca14f7bcbbbcce61a0db10b45c5ad3965d02331b4d54e2957c2daa1aa68",
+    "correlation_matrix.csv": "30c228d7965c4eaa504f94591ec6af33de6ae50e5c3cbaf89b3cd3600d26165d",
+    "portfolio_drawdown.csv": "baee1c898aef22543f24d601ded989201311100768e3f44a33cf30cae7fde776",
+    "risk_metrics.csv": "3b95cee5fc0cdfc8b1bfe6b3bc31b818e911ad42346e30952f8beebb0e4c8d97",
+    "analytics_validation_report.json": "578861db6c9181da72f04385adb725cede0a7166105ee7e6590585e72314b7d1"
+  },
+  "runtime_versions": {
+    "python": "3.11.5",
+    "packages": {
+      "pandas": "3.1.1",
+      "numpy": "2.4.6",
+      "pyarrow": "26.0.1"
+    }
+  }
+}

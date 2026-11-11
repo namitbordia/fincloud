@@ -1,0 +1,8 @@
+**
+!backend/
+!backend/**
+!src/
+!src/**
+**/__pycache__/
+**/*.py[cod]
+/backend/dist/

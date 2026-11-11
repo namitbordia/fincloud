@@ -1,0 +1,820 @@
+{
+  "training_date_range": {
+    "start": "2020-01-01",
+    "end": "2022-12-30"
+  },
+  "validation_date_range": {
+    "start": "2023-01-02",
+    "end": "2023-12-29"
+  },
+  "test_date_range": {
+    "start": "2024-01-01",
+    "end": "2024-12-31"
+  },
+  "target_definition": "sqrt((trading_days_per_year / horizon) * sum(next horizon daily_return squared))",
+  "feature_names_and_order": [
+    "daily_return",
+    "return_lag_1",
+    "return_lag_2",
+    "return_lag_5",
+    "return_lag_10",
+    "return_lag_20",
+    "return_lag_60",
+    "volatility_5d",
+    "volatility_10d",
+    "volatility_20d",
+    "volatility_60d",
+    "mean_return_5d",
+    "mean_return_10d",
+    "mean_return_20d",
+    "mean_return_60d",
+    "adjusted_close_sma_distance_5d",
+    "adjusted_close_sma_distance_20d",
+    "adjusted_close_sma_distance_60d",
+    "rsi_14",
+    "volume_change",
+    "log_dollar_turnover",
+    "mean_log_dollar_turnover_20d"
+  ],
+  "random_seed": 42,
+  "model_artifacts": {
+    "RELIANCE": {
+      "random_forest": {
+        "filename": "RELIANCE_random_forest.joblib",
+        "sha256": "63b4378d71a88ffaaba4c975e959e78cd02f6fadb6d16da38b9e1d0ab211a371",
+        "size_bytes": 177905,
+        "training_time_seconds": 0.47963989997515455,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 6,
+          "min_samples_leaf": 5,
+          "max_features": 0.8,
+          "random_seed": 42
+        }
+      },
+      "xgboost": {
+        "filename": "RELIANCE_xgboost.joblib",
+        "sha256": "4157c12ce1fac763ed91629fe34dc400ff923fdc0e787d3ce111944cd1e3d83a",
+        "size_bytes": 20989,
+        "training_time_seconds": 0.07696219999343157,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_lambda": 1.0,
+          "random_seed": 42
+        }
+      },
+      "ridge": {
+        "filename": "RELIANCE_ridge.joblib",
+        "sha256": "f6104db2f93dc4050f487c7441a1eea2f7d1784b61bb9ce60610c925e59f1a3d",
+        "size_bytes": 1396,
+        "training_time_seconds": 0.001928799960296601,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "alpha": 1.0,
+          "random_seed": 42
+        }
+      }
+    },
+    "TCS": {
+      "random_forest": {
+        "filename": "TCS_random_forest.joblib",
+        "sha256": "21da8023a2387d62e95355045d264bf9e14958919cdf249be187a7681c81082a",
+        "size_bytes": 127960,
+        "training_time_seconds": 0.4014186999993399,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 6,
+          "min_samples_leaf": 5,
+          "max_features": 0.8,
+          "random_seed": 42
+        }
+      },
+      "xgboost": {
+        "filename": "TCS_xgboost.joblib",
+        "sha256": "f118feefb3384476dcf93eaa5f2d9cf8d946c5b06a76b2b8bc6cee39bf896757",
+        "size_bytes": 20815,
+        "training_time_seconds": 0.06510399997932836,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_lambda": 1.0,
+          "random_seed": 42
+        }
+      },
+      "ridge": {
+        "filename": "TCS_ridge.joblib",
+        "sha256": "2c531a3c4aaa3b3fe4a60325a12d0be755f2e49635e81d7661042f79d47f770a",
+        "size_bytes": 1394,
+        "training_time_seconds": 0.0015830000047571957,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "alpha": 1.0,
+          "random_seed": 42
+        }
+      }
+    },
+    "INFY": {
+      "random_forest": {
+        "filename": "INFY_random_forest.joblib",
+        "sha256": "f738e78366783c385628871fd96e6eb5bb6749b3405adededa16c2ab66370535",
+        "size_bytes": 137066,
+        "training_time_seconds": 0.3977868999936618,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 6,
+          "min_samples_leaf": 5,
+          "max_features": 0.8,
+          "random_seed": 42
+        }
+      },
+      "xgboost": {
+        "filename": "INFY_xgboost.joblib",
+        "sha256": "340708804b5485fab6c314d134a7868a16d51d06016d4bc1e093015cc6d95c63",
+        "size_bytes": 20915,
+        "training_time_seconds": 0.06583929999032989,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_lambda": 1.0,
+          "random_seed": 42
+        }
+      },
+      "ridge": {
+        "filename": "INFY_ridge.joblib",
+        "sha256": "f8872d0085dc1ca94b78c2c316e92dbe4e93ab48fa92a1210eb404a441e6bfb8",
+        "size_bytes": 1397,
+        "training_time_seconds": 0.0016191999893635511,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "alpha": 1.0,
+          "random_seed": 42
+        }
+      }
+    },
+    "HDFCBANK": {
+      "random_forest": {
+        "filename": "HDFCBANK_random_forest.joblib",
+        "sha256": "89d2997101e201ecc2eb790d97d8e9b96ab7b98d90b0ae5dc52efd526f1e2295",
+        "size_bytes": 160332,
+        "training_time_seconds": 0.37679349997779354,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 6,
+          "min_samples_leaf": 5,
+          "max_features": 0.8,
+          "random_seed": 42
+        }
+      },
+      "xgboost": {
+        "filename": "HDFCBANK_xgboost.joblib",
+        "sha256": "d42af02e5bf43f355d032ab81fcc2347133727078767bf9d771162df543937ec",
+        "size_bytes": 20855,
+        "training_time_seconds": 0.06621889997040853,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_lambda": 1.0,
+          "random_seed": 42
+        }
+      },
+      "ridge": {
+        "filename": "HDFCBANK_ridge.joblib",
+        "sha256": "27a001c7f74e391bf32a7e4b2c55d1ce7ac36bf4adaa511d2711162c812e5afb",
+        "size_bytes": 1389,
+        "training_time_seconds": 0.0015518000000156462,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "alpha": 1.0,
+          "random_seed": 42
+        }
+      }
+    },
+    "ICICIBANK": {
+      "random_forest": {
+        "filename": "ICICIBANK_random_forest.joblib",
+        "sha256": "a122cd8a100cb5145071b0b1d6fa91b0ddc0cefe70e02129f130fdd484303b15",
+        "size_bytes": 178196,
+        "training_time_seconds": 0.37301889999071136,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 6,
+          "min_samples_leaf": 5,
+          "max_features": 0.8,
+          "random_seed": 42
+        }
+      },
+      "xgboost": {
+        "filename": "ICICIBANK_xgboost.joblib",
+        "sha256": "3b214b3213a9c982152ced32d5f0aaa88ed2ef3e08a1bcc55b96fdf8e94f10bd",
+        "size_bytes": 20842,
+        "training_time_seconds": 0.06417829997371882,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_lambda": 1.0,
+          "random_seed": 42
+        }
+      },
+      "ridge": {
+        "filename": "ICICIBANK_ridge.joblib",
+        "sha256": "e7069d4a58d5cb9fc55095c3f42a0e676c47cc2be63c8788a20b94a8e830c76d",
+        "size_bytes": 1393,
+        "training_time_seconds": 0.0016996999620459974,
+        "training_observations": 1096,
+        "training_start_date": "2020-03-30",
+        "training_end_date": "2024-10-30",
+        "training_label_end_date": "2024-11-29",
+        "fit_date": "2024-12-02",
+        "feature_names": [
+          "daily_return",
+          "return_lag_1",
+          "return_lag_2",
+          "return_lag_5",
+          "return_lag_10",
+          "return_lag_20",
+          "return_lag_60",
+          "volatility_5d",
+          "volatility_10d",
+          "volatility_20d",
+          "volatility_60d",
+          "mean_return_5d",
+          "mean_return_10d",
+          "mean_return_20d",
+          "mean_return_60d",
+          "adjusted_close_sma_distance_5d",
+          "adjusted_close_sma_distance_20d",
+          "adjusted_close_sma_distance_60d",
+          "rsi_14",
+          "volume_change",
+          "log_dollar_turnover",
+          "mean_log_dollar_turnover_20d"
+        ],
+        "model_parameters": {
+          "alpha": 1.0,
+          "random_seed": 42
+        }
+      }
+    }
+  },
+  "artifact_files": [
+    {
+      "filename": "HDFCBANK_random_forest.joblib",
+      "sha256": "89d2997101e201ecc2eb790d97d8e9b96ab7b98d90b0ae5dc52efd526f1e2295",
+      "size_bytes": 160332
+    },
+    {
+      "filename": "HDFCBANK_ridge.joblib",
+      "sha256": "27a001c7f74e391bf32a7e4b2c55d1ce7ac36bf4adaa511d2711162c812e5afb",
+      "size_bytes": 1389
+    },
+    {
+      "filename": "HDFCBANK_xgboost.joblib",
+      "sha256": "d42af02e5bf43f355d032ab81fcc2347133727078767bf9d771162df543937ec",
+      "size_bytes": 20855
+    },
+    {
+      "filename": "ICICIBANK_random_forest.joblib",
+      "sha256": "a122cd8a100cb5145071b0b1d6fa91b0ddc0cefe70e02129f130fdd484303b15",
+      "size_bytes": 178196
+    },
+    {
+      "filename": "ICICIBANK_ridge.joblib",
+      "sha256": "e7069d4a58d5cb9fc55095c3f42a0e676c47cc2be63c8788a20b94a8e830c76d",
+      "size_bytes": 1393
+    },
+    {
+      "filename": "ICICIBANK_xgboost.joblib",
+      "sha256": "3b214b3213a9c982152ced32d5f0aaa88ed2ef3e08a1bcc55b96fdf8e94f10bd",
+      "size_bytes": 20842
+    },
+    {
+      "filename": "INFY_random_forest.joblib",
+      "sha256": "f738e78366783c385628871fd96e6eb5bb6749b3405adededa16c2ab66370535",
+      "size_bytes": 137066
+    },
+    {
+      "filename": "INFY_ridge.joblib",
+      "sha256": "f8872d0085dc1ca94b78c2c316e92dbe4e93ab48fa92a1210eb404a441e6bfb8",
+      "size_bytes": 1397
+    },
+    {
+      "filename": "INFY_xgboost.joblib",
+      "sha256": "340708804b5485fab6c314d134a7868a16d51d06016d4bc1e093015cc6d95c63",
+      "size_bytes": 20915
+    },
+    {
+      "filename": "RELIANCE_random_forest.joblib",
+      "sha256": "63b4378d71a88ffaaba4c975e959e78cd02f6fadb6d16da38b9e1d0ab211a371",
+      "size_bytes": 177905
+    },
+    {
+      "filename": "RELIANCE_ridge.joblib",
+      "sha256": "f6104db2f93dc4050f487c7441a1eea2f7d1784b61bb9ce60610c925e59f1a3d",
+      "size_bytes": 1396
+    },
+    {
+      "filename": "RELIANCE_xgboost.joblib",
+      "sha256": "4157c12ce1fac763ed91629fe34dc400ff923fdc0e787d3ce111944cd1e3d83a",
+      "size_bytes": 20989
+    },
+    {
+      "filename": "TCS_random_forest.joblib",
+      "sha256": "21da8023a2387d62e95355045d264bf9e14958919cdf249be187a7681c81082a",
+      "size_bytes": 127960
+    },
+    {
+      "filename": "TCS_ridge.joblib",
+      "sha256": "2c531a3c4aaa3b3fe4a60325a12d0be755f2e49635e81d7661042f79d47f770a",
+      "size_bytes": 1394
+    },
+    {
+      "filename": "TCS_xgboost.joblib",
+      "sha256": "f118feefb3384476dcf93eaa5f2d9cf8d946c5b06a76b2b8bc6cee39bf896757",
+      "size_bytes": 20815
+    }
+  ],
+  "runtime_versions": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0",
+    "joblib": "1.6.0"
+  },
+  "source_checksums": [
+    {
+      "filename": "all_stocks.csv",
+      "sha256": "128bf6a7f036b1eee21c69abfb4dcf7fafcd9fc34581d97c3833a9d06671b2e8"
+    },
+    {
+      "filename": "all_stocks.parquet",
+      "sha256": "11bb549352d1a53ede264e69855e422463080e5e43890f0a028c1c4de006fef7"
+    },
+    {
+      "filename": "HDFCBANK.csv",
+      "sha256": "316bb53c4a9da042cd6ff34fc0cfbaf6c7162b30fd07f23ee3f1fc1c24042bd5"
+    },
+    {
+      "filename": "HDFCBANK.parquet",
+      "sha256": "6fffdb4b8e84b3c065a1555b3dc1c9537957892de8132e0d09dd6dc7dc0829cf"
+    },
+    {
+      "filename": "ICICIBANK.csv",
+      "sha256": "2eac920968e8517cc108e11e7ec768c07fb5a88fadbd9b77e6fd900a6f5c0d72"
+    },
+    {
+      "filename": "ICICIBANK.parquet",
+      "sha256": "3030a6f2fece51c86f5d54ca67f7936dab26dbcfb226081f6696b41edceb27c1"
+    },
+    {
+      "filename": "INFY.csv",
+      "sha256": "3b0ef2b9505ddf347955eceded8ba6479ea5ea8076868782de62edb1d55d6187"
+    },
+    {
+      "filename": "INFY.parquet",
+      "sha256": "dad651cf47f0eb243b22fb8d125d246b5403563d12dab7bdc1984a6afb3b18f4"
+    },
+    {
+      "filename": "RELIANCE.csv",
+      "sha256": "6e89ecfaa6e0b5b35ad2aa29641087dc679f5cda2f445d884a61359d38e86719"
+    },
+    {
+      "filename": "RELIANCE.parquet",
+      "sha256": "9e50100202def480e5085ddcb617d6da47177b075ce23df6e42a19df6e67b0eb"
+    },
+    {
+      "filename": "silver_dataset_manifest.json",
+      "sha256": "4b025ce8430dfcd0340f6a37dc302101f109bd71681f69646ac8a1102eb2acf5"
+    },
+    {
+      "filename": "silver_validation_report.json",
+      "sha256": "7005d5611f22e3c7e5bd268bf8a71d4567e74bc1bf8bdf1daf791015ea109175"
+    },
+    {
+      "filename": "TCS.csv",
+      "sha256": "ccdf7f510684cf19946578dabbc4be8b96f0213f023c05de8467dc59f82c6bb2"
+    },
+    {
+      "filename": "TCS.parquet",
+      "sha256": "5c70cc2d2c54d3a8d5233b614cd4866fe0598ba199afba9419ade1ef33dc5c40"
+    }
+  ]
+}

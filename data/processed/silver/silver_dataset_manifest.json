@@ -1,0 +1,155 @@
+{
+  "processing_timestamp_utc": "2026-11-05T20:04:35.766972+00:00",
+  "source_files": [
+    {
+      "filename": "RELIANCE.csv",
+      "sha256": "698a8004ce311f096b8ec5812921e1dbdf05b4f8c30161c1243df6502e6d1916",
+      "role": "per_stock_csv_processing_input"
+    },
+    {
+      "filename": "RELIANCE.parquet",
+      "sha256": "3a6b1955029b8fdef64ed0e5a60a2cf251b404c805f440d6fda29f3c00f05844",
+      "role": "source_integrity_and_parity_check"
+    },
+    {
+      "filename": "TCS.csv",
+      "sha256": "b8f1d88126e0cd1fdc7b72587def5dda21e324e3e03d1e77d56b242a6dc5d002",
+      "role": "per_stock_csv_processing_input"
+    },
+    {
+      "filename": "TCS.parquet",
+      "sha256": "08529c1b50d0bc556fd0fc226bd49f5228d2793d14c16a2ec96929bfab66438a",
+      "role": "source_integrity_and_parity_check"
+    },
+    {
+      "filename": "INFY.csv",
+      "sha256": "c5ad28e855f70ffefe77b0036ec71f5f8b4c368f5a0fa79929705947efae4009",
+      "role": "per_stock_csv_processing_input"
+    },
+    {
+      "filename": "INFY.parquet",
+      "sha256": "bc2607c81cb9cca2b7c6bc9b64e65cd03d1cc7ddc71797e29b038362840634ed",
+      "role": "source_integrity_and_parity_check"
+    },
+    {
+      "filename": "HDFCBANK.csv",
+      "sha256": "281b188db387a3b5e89768a991aa95f993065a7114d377290aae7eff60079f66",
+      "role": "per_stock_csv_processing_input"
+    },
+    {
+      "filename": "HDFCBANK.parquet",
+      "sha256": "08a79778c0ff430cefcc8d2d45dd77409f88b3392c7f733e8edc1f4a06d76c6a",
+      "role": "source_integrity_and_parity_check"
+    },
+    {
+      "filename": "ICICIBANK.csv",
+      "sha256": "7cef5d891cda8e4746d84ccd3e5e3be388bee92947afd8cfe79278a34fd42466",
+      "role": "per_stock_csv_processing_input"
+    },
+    {
+      "filename": "ICICIBANK.parquet",
+      "sha256": "6346de02f7b4fd01337b0907ab5a28268a43ba6608ecd14089c054b8ed7a90be",
+      "role": "source_integrity_and_parity_check"
+    },
+    {
+      "filename": "all_stocks.csv",
+      "sha256": "4965f6dc3d848722bf80a23ce79980887880747465528227bb020b4299ba5727",
+      "role": "source_integrity_and_parity_check"
+    },
+    {
+      "filename": "all_stocks.parquet",
+      "sha256": "5be60242943ced79490c143b17fae053aa9d45f96fc295bc654ee30749a8fb53",
+      "role": "source_integrity_and_parity_check"
+    }
+  ],
+  "source_checksums_unchanged_after_processing": true,
+  "date_range": {
+    "min": "2020-01-01",
+    "max": "2024-12-31",
+    "observed_session_calendar": "Union of valid dates observed in the configured source tickers; weekends and exchange holidays are not inferred."
+  },
+  "stock_symbols": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK"
+  ],
+  "row_counts": {
+    "RELIANCE": 1238,
+    "TCS": 1238,
+    "INFY": 1238,
+    "HDFCBANK": 1238,
+    "ICICIBANK": 1238
+  },
+  "combined_row_count": 6190,
+  "output_filenames": {
+    "RELIANCE": {
+      "csv": "RELIANCE.csv",
+      "parquet": "RELIANCE.parquet"
+    },
+    "TCS": {
+      "csv": "TCS.csv",
+      "parquet": "TCS.parquet"
+    },
+    "INFY": {
+      "csv": "INFY.csv",
+      "parquet": "INFY.parquet"
+    },
+    "HDFCBANK": {
+      "csv": "HDFCBANK.csv",
+      "parquet": "HDFCBANK.parquet"
+    },
+    "ICICIBANK": {
+      "csv": "ICICIBANK.csv",
+      "parquet": "ICICIBANK.parquet"
+    },
+    "all_stocks": {
+      "csv": "all_stocks.csv",
+      "parquet": "all_stocks.parquet"
+    },
+    "silver_validation_report": {
+      "json": "silver_validation_report.json"
+    },
+    "silver_dataset_manifest": {
+      "json": "silver_dataset_manifest.json"
+    }
+  },
+  "output_sha256": {
+    "all_stocks.csv": "128bf6a7f036b1eee21c69abfb4dcf7fafcd9fc34581d97c3833a9d06671b2e8",
+    "all_stocks.parquet": "11bb549352d1a53ede264e69855e422463080e5e43890f0a028c1c4de006fef7",
+    "HDFCBANK.csv": "316bb53c4a9da042cd6ff34fc0cfbaf6c7162b30fd07f23ee3f1fc1c24042bd5",
+    "HDFCBANK.parquet": "6fffdb4b8e84b3c065a1555b3dc1c9537957892de8132e0d09dd6dc7dc0829cf",
+    "ICICIBANK.csv": "2eac920968e8517cc108e11e7ec768c07fb5a88fadbd9b77e6fd900a6f5c0d72",
+    "ICICIBANK.parquet": "3030a6f2fece51c86f5d54ca67f7936dab26dbcfb226081f6696b41edceb27c1",
+    "INFY.csv": "3b0ef2b9505ddf347955eceded8ba6479ea5ea8076868782de62edb1d55d6187",
+    "INFY.parquet": "dad651cf47f0eb243b22fb8d125d246b5403563d12dab7bdc1984a6afb3b18f4",
+    "RELIANCE.csv": "6e89ecfaa6e0b5b35ad2aa29641087dc679f5cda2f445d884a61359d38e86719",
+    "RELIANCE.parquet": "9e50100202def480e5085ddcb617d6da47177b075ce23df6e42a19df6e67b0eb",
+    "silver_validation_report.json": "7005d5611f22e3c7e5bd268bf8a71d4567e74bc1bf8bdf1daf791015ea109175",
+    "TCS.csv": "ccdf7f510684cf19946578dabbc4be8b96f0213f023c05de8467dc59f82c6bb2",
+    "TCS.parquet": "5c70cc2d2c54d3a8d5233b614cd4866fe0598ba199afba9419ade1ef33dc5c40"
+  },
+  "runtime_versions": {
+    "python": "3.11.5",
+    "packages": {
+      "pandas": "3.1.1",
+      "numpy": "2.4.6",
+      "pyarrow": "26.0.1",
+      "yfinance": "1.8.0",
+      "pytest": "9.2.0"
+    }
+  },
+  "processing_configuration": {
+    "rolling_window": 20,
+    "rolling_std_ddof": 1,
+    "duplicate_rule": "Keep earliest source_row_number per normalized symbol/date; record later rows in exclusions.",
+    "symbol_normalization": "uppercase; strip NSE: prefix and .NS suffix",
+    "adjusted_close_column": "adj_close; never substitute close",
+    "missing_session_calendar": "union of observed source dates",
+    "fill_missing_values": false,
+    "forward_fill_prices_or_returns": false,
+    "excluded_source_rows": 0
+  },
+  "manifest_checksum_note": "This manifest does not include its own checksum. Output checksums cover all generated data files and silver_validation_report.json."
+}

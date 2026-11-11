@@ -1,0 +1,45 @@
+{
+  "valid": true,
+  "checks": {
+    "weights_sum_to_one": true,
+    "forecast_origins_precede_rebalance": true,
+    "estimation_windows_precede_rebalance": true,
+    "test_period_not_used_for_hyperparameter_selection": true,
+    "phase4_analytics_unchanged": true,
+    "phase5_forecasts_unchanged": true,
+    "raw_or_silver_data_unchanged": true,
+    "silver_checksums_unchanged": true,
+    "ml_forecast_checksum_unchanged": true,
+    "raw_checksums_match_phase3_manifest": true
+  },
+  "raw_checksum_verification": {
+    "available": true,
+    "verified": true,
+    "files_verified": 12,
+    "expected_files": 12,
+    "mismatches": []
+  },
+  "phase4_analytics_checksums_unchanged": true,
+  "phase5_forecast_checksums_unchanged": true,
+  "silver_rows": 6190,
+  "silver_date_range": {
+    "start": "2020-01-01",
+    "end": "2024-12-31"
+  },
+  "symbols": [
+    "HDFCBANK",
+    "ICICIBANK",
+    "INFY",
+    "RELIANCE",
+    "TCS"
+  ],
+  "configuration_count": 12,
+  "daily_return_rows": 28962,
+  "optimization_weight_rows": 4800,
+  "rebalance_rows": 960,
+  "solver_failures_or_skips": 12,
+  "solver_diagnostics_file": "optimization_diagnostics.json",
+  "forecast_aware_model": "random_forest",
+  "forecast_aware_strategy_count": 192,
+  "overlapping_samples_or_costs_are_not_filled": true
+}

@@ -1,0 +1,202 @@
+{
+  "scenarios": [
+    {
+      "configuration_id": "window60_monthly_cap0.6_cost0_cvar0.95",
+      "estimation_window": 60,
+      "rebalance_frequency": "monthly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 0.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window60_monthly_cap0.6_cost10_cvar0.95",
+      "estimation_window": 60,
+      "rebalance_frequency": "monthly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 10.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window60_quarterly_cap0.6_cost0_cvar0.95",
+      "estimation_window": 60,
+      "rebalance_frequency": "quarterly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 0.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window60_quarterly_cap0.6_cost10_cvar0.95",
+      "estimation_window": 60,
+      "rebalance_frequency": "quarterly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 10.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window120_monthly_cap0.6_cost0_cvar0.95",
+      "estimation_window": 120,
+      "rebalance_frequency": "monthly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 0.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window120_monthly_cap0.6_cost10_cvar0.95",
+      "estimation_window": 120,
+      "rebalance_frequency": "monthly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 10.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window120_quarterly_cap0.6_cost0_cvar0.95",
+      "estimation_window": 120,
+      "rebalance_frequency": "quarterly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 0.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window120_quarterly_cap0.6_cost10_cvar0.95",
+      "estimation_window": 120,
+      "rebalance_frequency": "quarterly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 10.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window252_monthly_cap0.6_cost0_cvar0.95",
+      "estimation_window": 252,
+      "rebalance_frequency": "monthly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 0.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window252_monthly_cap0.6_cost10_cvar0.95",
+      "estimation_window": 252,
+      "rebalance_frequency": "monthly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 10.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window252_quarterly_cap0.6_cost0_cvar0.95",
+      "estimation_window": 252,
+      "rebalance_frequency": "quarterly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 0.0,
+      "cvar_confidence": 0.95
+    },
+    {
+      "configuration_id": "window252_quarterly_cap0.6_cost10_cvar0.95",
+      "estimation_window": 252,
+      "rebalance_frequency": "quarterly",
+      "maximum_asset_weight": 0.6,
+      "transaction_cost_bps": 10.0,
+      "cvar_confidence": 0.95
+    }
+  ],
+  "solver_diagnostics": [
+    {
+      "configuration_id": "window60_monthly_cap0.6_cost0_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window60_monthly_cap0.6_cost10_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window60_quarterly_cap0.6_cost0_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window60_quarterly_cap0.6_cost10_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window120_monthly_cap0.6_cost0_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window120_monthly_cap0.6_cost10_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window120_quarterly_cap0.6_cost0_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window120_quarterly_cap0.6_cost10_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window252_monthly_cap0.6_cost0_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window252_monthly_cap0.6_cost10_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window252_quarterly_cap0.6_cost0_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    },
+    {
+      "configuration_id": "window252_quarterly_cap0.6_cost10_cvar0.95",
+      "rebalance_date": "2023-01-02",
+      "strategy": "minimum_variance_forecast_aware",
+      "status": "forecast_unavailable",
+      "forecast_origin": null,
+      "error": "No prior-origin volatility forecasts are available."
+    }
+  ],
+  "forecast_aware_model": "random_forest",
+  "forecast_aware_method": "Forecast annualized volatilities combined with complete-history correlation estimated strictly before each rebalance.",
+  "configuration_count": 12,
+  "failed_or_skipped_rebalance_count": 12
+}

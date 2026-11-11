@@ -1,0 +1,186 @@
+{
+  "processing_timestamp_utc": "2026-11-08T12:21:20.913090+00:00",
+  "input_files": [
+    {
+      "filename": "all_stocks.csv",
+      "sha256": "128bf6a7f036b1eee21c69abfb4dcf7fafcd9fc34581d97c3833a9d06671b2e8"
+    },
+    {
+      "filename": "all_stocks.parquet",
+      "sha256": "11bb549352d1a53ede264e69855e422463080e5e43890f0a028c1c4de006fef7"
+    },
+    {
+      "filename": "HDFCBANK.csv",
+      "sha256": "316bb53c4a9da042cd6ff34fc0cfbaf6c7162b30fd07f23ee3f1fc1c24042bd5"
+    },
+    {
+      "filename": "HDFCBANK.parquet",
+      "sha256": "6fffdb4b8e84b3c065a1555b3dc1c9537957892de8132e0d09dd6dc7dc0829cf"
+    },
+    {
+      "filename": "ICICIBANK.csv",
+      "sha256": "2eac920968e8517cc108e11e7ec768c07fb5a88fadbd9b77e6fd900a6f5c0d72"
+    },
+    {
+      "filename": "ICICIBANK.parquet",
+      "sha256": "3030a6f2fece51c86f5d54ca67f7936dab26dbcfb226081f6696b41edceb27c1"
+    },
+    {
+      "filename": "INFY.csv",
+      "sha256": "3b0ef2b9505ddf347955eceded8ba6479ea5ea8076868782de62edb1d55d6187"
+    },
+    {
+      "filename": "INFY.parquet",
+      "sha256": "dad651cf47f0eb243b22fb8d125d246b5403563d12dab7bdc1984a6afb3b18f4"
+    },
+    {
+      "filename": "RELIANCE.csv",
+      "sha256": "6e89ecfaa6e0b5b35ad2aa29641087dc679f5cda2f445d884a61359d38e86719"
+    },
+    {
+      "filename": "RELIANCE.parquet",
+      "sha256": "9e50100202def480e5085ddcb617d6da47177b075ce23df6e42a19df6e67b0eb"
+    },
+    {
+      "filename": "silver_dataset_manifest.json",
+      "sha256": "4b025ce8430dfcd0340f6a37dc302101f109bd71681f69646ac8a1102eb2acf5"
+    },
+    {
+      "filename": "silver_validation_report.json",
+      "sha256": "7005d5611f22e3c7e5bd268bf8a71d4567e74bc1bf8bdf1daf791015ea109175"
+    },
+    {
+      "filename": "TCS.csv",
+      "sha256": "ccdf7f510684cf19946578dabbc4be8b96f0213f023c05de8467dc59f82c6bb2"
+    },
+    {
+      "filename": "TCS.parquet",
+      "sha256": "5c70cc2d2c54d3a8d5233b614cd4866fe0598ba199afba9419ade1ef33dc5c40"
+    },
+    {
+      "filename": "C:\\Users\\Namit Bordia\\Downloads\\fincloud\\data\\processed\\forecasting\\statistical\\statistical_forecasts.csv",
+      "sha256": "7a6c43ab73aa5961bcc1506eca7e657191bb7fdd2f51e0c8e2bfdeebc43d548e"
+    }
+  ],
+  "source_checksums_unchanged_after_processing": true,
+  "stock_symbols": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK"
+  ],
+  "row_counts": {
+    "silver_rows": 6190,
+    "ml_forecast_rows": 7365,
+    "comparison_rows": 14730,
+    "feature_importance_rows": 330
+  },
+  "model_configuration": {
+    "refit_frequency": "monthly",
+    "random_seed": 42,
+    "model_parameters": {
+      "random_forest": {
+        "n_estimators": 100,
+        "max_depth": 6,
+        "min_samples_leaf": 5,
+        "max_features": 0.8
+      },
+      "xgboost": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_lambda": 1.0
+      },
+      "ridge": {
+        "alpha": 1.0
+      }
+    },
+    "statistical_models_compared": [
+      "historical_rolling",
+      "ewma",
+      "garch_1_1"
+    ]
+  },
+  "split_dates": {
+    "training_origin_end": "2022-12-31",
+    "validation_origin_end": "2023-12-31",
+    "validation_target_end_must_not_exceed": "2023-12-31",
+    "test_target_end_must_be_observed": true
+  },
+  "training_time_seconds_by_model": {
+    "random_forest": 40.04426019976381,
+    "ridge": 0.2067752997390926,
+    "xgboost": 7.963408199662808
+  },
+  "inference_time_seconds_by_model": {
+    "random_forest": 13.51949120068457,
+    "ridge": 1.0779203010024503,
+    "xgboost": 1.0045754000311717
+  },
+  "model_size_bytes_by_model": {
+    "random_forest": 781459,
+    "xgboost": 104416,
+    "ridge": 6969,
+    "historical_rolling": 0,
+    "ewma": 0,
+    "garch_1_1": 0
+  },
+  "model_artifact_directory": "C:\\Users\\Namit Bordia\\Downloads\\fincloud\\models\\volatility",
+  "runtime_versions": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0",
+    "joblib": "1.6.0"
+  },
+  "outputs": [
+    {
+      "filename": "ml_forecasts.csv",
+      "sha256": "8873f3446d3cef608fd06b90e2586c670cf12db9ad6953550ffbe96a262f0d98"
+    },
+    {
+      "filename": "ml_model_metrics.csv",
+      "sha256": "5c2f06132289eb72700ba51eadca9d365bf8a9cfcfbfd89b562293ca18b51bab"
+    },
+    {
+      "filename": "ml_stock_metrics.csv",
+      "sha256": "fe3028ae6172791a99a1a43c281aa8b2f84f52e356bca35388582f5a59e2b1f9"
+    },
+    {
+      "filename": "model_comparison.csv",
+      "sha256": "ba14af3980f112be08b277ca031a67f13add934d69cafa20a6d9f1912fa5afb2"
+    },
+    {
+      "filename": "feature_importance.csv",
+      "sha256": "0b17d7ded77f825e895b68768e7119298425bf5a2515a64c4cebb99822d3517c"
+    },
+    {
+      "filename": "ml_validation_report.json",
+      "sha256": "a2316cb2297d2d4214333d10b823ba48b49e07eac3b3eb0c2a889f3f6211ac0f"
+    },
+    {
+      "filename": "plots/actual_vs_predicted_volatility.png",
+      "sha256": "935a96346b7f75f17738a822d1a282b4600692913c81e3dbed3b412fc59bfa6f"
+    },
+    {
+      "filename": "plots/model_comparison_test.png",
+      "sha256": "16ddcd3e74ba379cbf6aa2f1f26cbbf1da6d163ecdb11956e7e802666bd3f82e"
+    },
+    {
+      "filename": "plots/feature_importance.png",
+      "sha256": "d23035d392e9dd65628cee4c2f67273c58ad36cc7c662f33b4ed3f7ca999ceb6"
+    },
+    {
+      "filename": "plots/forecast_errors_over_time.png",
+      "sha256": "be9be2cccd33420af8186cf350921c1766e59115112dce6b546d6773d674c0a7"
+    },
+    {
+      "filename": "C:\\Users\\Namit Bordia\\Downloads\\fincloud\\models\\volatility\\model_metadata.json",
+      "sha256": "4ca4a0276a68e212126f19a3c90a4ceb68fc4274ee876354c933eab1bd77c3e7"
+    }
+  ]
+}

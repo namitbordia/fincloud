@@ -1,0 +1,18 @@
+FROM public.ecr.aws/lambda/python:3.12 AS package
+
+RUN dnf install -y findutils libgomp zip && dnf clean all
+COPY backend/requirements.txt /tmp/requirements.txt
+RUN python -m pip install --no-cache-dir --disable-pip-version-check \
+    --target /opt/package -r /tmp/requirements.txt
+RUN rm -rf /opt/package/boto3 /opt/package/botocore /opt/package/s3transfer \
+    /opt/package/jmespath /opt/package/urllib3 \
+    /opt/package/boto3-*.dist-info /opt/package/botocore-*.dist-info \
+    /opt/package/s3transfer-*.dist-info /opt/package/jmespath-*.dist-info \
+    /opt/package/urllib3-*.dist-info
+COPY backend /opt/package/backend
+COPY src /opt/package/src
+RUN find /opt/package -type d \( -name tests -o -name test -o -name datasets -o -name __pycache__ \) -prune -exec rm -rf {} + \
+    && find /opt/package -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete \
+    && cd /opt/package && zip -qr /tmp/fincloud-api.zip . \
+    && python -c "import os; assert os.path.getsize('/tmp/fincloud-api.zip') > 0"
+CMD ["/bin/true"]
